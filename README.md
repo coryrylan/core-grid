@@ -2,7 +2,7 @@
 
 <p>
   The pico first grid is a micro css grid. No base style. No resets. No framework. 
-  No defined breakpoints. No BS. Just a grid. 
+  No defined breakpoints. No bs. Just a grid. 
 </p>
 
 <p>
