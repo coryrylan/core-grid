@@ -1,0 +1,62 @@
+﻿body {
+  font-size:1.1em;
+  font-family: "HelveticaNeue-Light", 
+  "Helvetica Neue Light", "Helvetica Neue",
+  Helvetica, Arial, "Lucida Grande", sans- serif;
+  overflow-x:hidden;
+}
+
+h1 {
+    width:100%;
+    background-color:#21C40B;
+    padding:1%;
+    color:#FFF;
+    margin:0% 0% 3% 0%;
+}
+
+h2 {
+    margin:1% 0%;
+    color:#1CA809;
+}
+
+footer {
+    clear:both;
+    width:100%;
+    min-height:200px;
+    background-color:#3d3d3d;
+}
+
+.code h2 {
+    border-bottom:solid 2px #21C40B;
+}
+
+pre {
+  display: block;
+  width: auto;
+  overflow: auto;
+  max-height: 600px;
+  white-space: pre;
+  word-wrap: normal;
+  padding: 10px; 
+  color:#1CA809; 
+}
+
+@media screen and (min-width: 45em) {
+    .indexPage .about .grid_6 {
+        width: 49%;
+    }
+
+    .indexPage .code .grid_6 {
+        width: 49%;
+    }
+
+    .indexPage .code pre {
+        min-height:400px;
+    }
+}
+
+@media screen and (min-width: 25em) {
+    .indexPage .demo .grid_6 {
+        width: 49%;
+    }
+}
