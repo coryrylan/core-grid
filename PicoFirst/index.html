@@ -7,29 +7,29 @@
     <link href="Resources/index.css" rel="stylesheet" />
 </head>
 <body>
-    <h1>PICO FIRST</h1>
+    <h1>Pico First</h1>
     <section class="container indexPage">
         <h2>A Mobile First, Content Defined Micro Grid</h2>
 
         <section class="about">
             <div class="grid_6">
-                <p>The pico first grid is a micro css grid. No base style. No resets. No framework. No defined breakpoints. No BS. Just a grid. </p>
+                <p>The pico first grid is a micro css grid. No base style. No resets. No framework. No defined breakpoints. No bs. Just a grid. </p>
 
                 <p>
                     The grid is simple and gives you the designer more control of your pages. All 12 columns start at 100% single 
                     column design for mobile. As you have more space on you page you turn your grid on and off
                     with min-width media queries.
                 </p>
-
-
             </div>
 
             <div class="grid_6 omega">
-                                <p>
-                    The column widths are defined in a comment for reference. It is up to you to simply add in your media queries when you would like
-                    the grid to be active. This give you the control to turn the grid off and on based on your content and not device based breakpoints.
+                <p>
+                    The column widths are defined in a comment for reference. It is up to you to simply add the widths in your media queries.
+                    This give you the control to turn the grid off and on based on your content and not device based breakpoints.
                     Grids dont need to be complex to make complex layouts.
                 </p>
+                <p>Get the code, updates or contribute at: <a href="https://github.com/splintercode/PicoFirstGrid" target="_blank">Github.com/splintercode/PicoFirstGrid</a></p>
+                <p><a href="demo.html" target="_blank">See Large Example</a></p>
             </div>
         </section>
 
@@ -62,7 +62,7 @@
                 <pre class="code">
                     <code>
 @media screen and (min-width: 25em) {
-    .indexPage .demo .grid_6 {
+    .demo .grid_6 {
         width: 49%;
     }
 }
@@ -83,10 +83,56 @@
             </div>
         </section>
 
+        <section class="code">
+            <h2>Pico Grid</h2>
+            <pre>
+                    <code>
+/*! GRID CONSTANTS
+.grid_1 { width: 6.5%; } 
+.grid_2 { width: 15%; } 
+.grid_3 { width: 23.5%; } 
+.grid_4 { width: 32%; } 
+.grid_5 { width: 40.5%; } 
+.grid_6 { width: 49%; } 
+.grid_7 { width: 57.5%; }
+.grid_8 { width: 66%; } 
+.grid_9 { width: 74.5%; } 
+.grid_10 { width: 83%; } 
+.grid_11 { width: 91.5%; } 
+.grid_12 { width: 100%; } */ 
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12 {
+    width:100%;
+	margin: 0 2% 1% 0;
+	float: left;
+	display: block;
+}
+
+.alpha{ margin-left:0; }
+.omega{ margin-right:0; }
+
+.container {
+	width: 90%; 
+    max-width: 1300px;
+    margin: 0px auto;
+}
+                    </code>
+                </pre>
+        </section>
     </section>
-
     <footer>
-
+        <a href="http://www.webdesignis.me" target="_blank">Cory Bateman @ www.webdesignis.me</a>
     </footer>
 </body>
 </html>
