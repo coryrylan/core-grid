@@ -69,16 +69,16 @@
 .grid_11,
 .grid_12 {
     width:100%;
-  margin: 0 2% 1% 0;
-	float: left;
-	display: block;
+    margin: 0 2% 1% 0;
+    float: left;
+    display: block;
 }
 
 .alpha{ margin-left:0; }
 .omega{ margin-right:0; }
 
 .container {
-	width: 90%; 
+    width: 90%; 
     max-width: 1300px;
     margin: 0px auto;
 }
