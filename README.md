@@ -19,14 +19,12 @@
 
 <h2>HTML</h2>
         <section class="demo">
-            <div class="grid_12">
-                <h2>Example 2 col</h2>
-                <div class="grid_6">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non   proident, sunt in culpa qui officia deserunt  mollit anim id est laborum.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-                <div class="grid_6 omega">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non   proident, sunt in culpa qui officia deserunt  mollit anim id est laborum.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
+            <h2>Example 2 col</h2>
+            <div class="col_6">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non   proident, sunt in culpa qui officia deserunt  mollit anim id est laborum.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="col_6 omega">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non   proident, sunt in culpa qui officia deserunt  mollit anim id est laborum.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
         </section>
         
@@ -34,7 +32,7 @@
 <h2>CSS</h2>
 <pre>
 @media screen and (min-width: 25em) {
-    .demo .grid_6 {
+    .demo .col_6 {
         width: 49%;
     }
 }
@@ -43,31 +41,31 @@
 <h2>Pico Grid</h2>
 <pre>
 /*! GRID CONSTANTS
-.grid_1 { width: 6.5%; } 
-.grid_2 { width: 15%; } 
-.grid_3 { width: 23.5%; } 
-.grid_4 { width: 32%; } 
-.grid_5 { width: 40.5%; } 
-.grid_6 { width: 49%; } 
-.grid_7 { width: 57.5%; }
-.grid_8 { width: 66%; } 
-.grid_9 { width: 74.5%; } 
-.grid_10 { width: 83%; } 
-.grid_11 { width: 91.5%; } 
-.grid_12 { width: 100%; } */ 
+.col_1 { width: 6.5%; } 
+.col_2 { width: 15%; } 
+.col_3 { width: 23.5%; } 
+.col_4 { width: 32%; } 
+.col_5 { width: 40.5%; } 
+.col_6 { width: 49%; } 
+.col_7 { width: 57.5%; }
+.col_8 { width: 66%; } 
+.col_9 { width: 74.5%; } 
+.col_10 { width: 83%; } 
+.col_11 { width: 91.5%; } 
+.col_12 { width: 100%; } */ 
 
-.grid_1,
-.grid_2,
-.grid_3,
-.grid_4,
-.grid_5,
-.grid_6,
-.grid_7,
-.grid_8,
-.grid_9,
-.grid_10,
-.grid_11,
-.grid_12 {
+.col_1,
+.col_2,
+.col_3,
+.col_4,
+.col_5,
+.col_6,
+.col_7,
+.col_8,
+.col_9,
+.col_10,
+.col_11,
+.col_12 {
     width:100%;
     margin: 0 2% 1% 0;
     float: left;
