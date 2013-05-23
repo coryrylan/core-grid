@@ -4,21 +4,21 @@
 
 /* Page 1 */
 @media screen and (min-width: 45em) {
-  .page1 .grid_6 {
+  .page1 .col_6 {
     width: 49%;
   }
 }
 
 /* Page 2 */
 @media screen and (min-width: 55em) {
-  .page2 .grid_4 {
+  .page2 .col_4 {
     width: 32%;
   }
 }
 
 /* Page 3 */
 @media screen and (min-width: 70em) {
-  .page3 .grid_3 {
+  .page3 .col_3 {
     width: 23.5%;
   }
 }
