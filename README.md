@@ -1,7 +1,8 @@
 <h1>Pico First Grid</h1>
 
 <p>
-  The pico first grid is a micro css grid. No base style. No resets. No framework. 
+  The <a href="http://webdesignis.me/PicoFirstGrid/index.html" target="_blank">Pico First Grid</a>
+   is a micro css grid. No base style. No resets. No framework. 
   No defined breakpoints. No bs. Just a grid. 
 </p>
 
