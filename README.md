@@ -41,7 +41,8 @@
 
 <h2>Pico Grid</h2>
 <pre>
-/*! GRID CONSTANTS
+/*! https://github.com/splintercode/PicoFirstGrid */
+/* GRID CONSTANTS
 .col_1 { width: 6.5%; } 
 .col_2 { width: 15%; } 
 .col_3 { width: 23.5%; } 
@@ -77,9 +78,10 @@
 .omega{ margin-right:0; }
 
 .container {
-    width: 90%; 
-    max-width: 1300px;
-    margin: 0px auto;
+    width: 96%;
+    max-width: 1200px;
+    margin: 0 auto;
+	padding:0 2%;
 }
 </pre>
 
