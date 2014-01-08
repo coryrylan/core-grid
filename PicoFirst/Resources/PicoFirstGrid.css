@@ -1,10 +1,11 @@
+/*! https://github.com/splintercode/PicoFirstGrid */
 ﻿/* 
     Cory Bateman http://www.webdesignis.me 
     MIT License http://opensource.org/licenses/MIT
     Pico first css grid 
 */
 
-/*! GRID CONSTANTS
+/* GRID CONSTANTS
 .col_1 { width: 6.5%; } 
 .col_2 { width: 15%; } 
 .col_3 { width: 23.5%; } 
@@ -31,16 +32,17 @@
 .col_11,
 .col_12 {
     width:100%;
-	margin: 0 2% 1% 0;
-	float: left;
-	display: block;
+    margin: 0 2% 1% 0;
+    float: left;
+    display: block;
 }
 
 .alpha{ margin-left:0; }
 .omega{ margin-right:0; }
 
 .container {
-	width: 90%; 
-    max-width: 1300px;
-    margin: 0px auto;
+    width: 96%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding:0 2%;
 }
