@@ -1,6 +1,5 @@
-/*! https://github.com/splintercode/PicoFirstGrid */
-﻿/* 
-    Cory Bateman http://www.webdesignis.me 
+/*! 
+    https://github.com/splintercode/PicoFirstGrid
     MIT License http://opensource.org/licenses/MIT
     Pico first css grid 
 */
@@ -32,7 +31,7 @@
 .col_11,
 .col_12 {
     width:100%;
-    margin: 0 2% 1% 0;
+    margin: 0 2% 2% 0;
     float: left;
     display: block;
 }
