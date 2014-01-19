@@ -1,144 +1,115 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>PicoFirst</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="PicoFirst/Resources/normalize.css" rel="stylesheet" />
-    <link href="PicoFirst/Resources/PicoFirstGrid.css" rel="stylesheet" />
-    <link href="PicoFirst/Resources/index.css" rel="stylesheet" />
+    <title>CSS Dual Grid</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href="/normalize.css" rel="stylesheet" />
+    <link href="/DualGrid.css" rel="stylesheet" />
+    <link href="/index.css" rel="stylesheet" />
 </head>
 <body>
-    <h1>Pico First</h1>
-    <section class="container indexPage">
-        <h2>A Mobile First, Content Defined Micro Grid</h2>
-
-        <section class="about">
-            <div class="col_6">
-                <p>The pico first grid is a micro css grid. No base style. No resets. No framework. No defined breakpoints. No bs. Just a grid. </p>
-
-                <p>
-                    The grid is simple and gives you the designer more control of your pages. All 12 columns start at 100% single 
-                    column design for mobile. As you have more space on you page you turn your grid on and off
-                    with min-width media queries.
-                </p>
-            </div>
-
-            <div class="col_6 omega">
-                <p>
-                    The column widths are defined in a comment for reference. It is up to you to simply add the widths in your media queries.
-                    This give you the control to turn the grid off and on based on your content and not device based breakpoints.
-                    Grids dont need to be complex to make complex layouts.
-                </p>
-                <p>Get the code, updates or contribute at: <a href="https://github.com/splintercode/PicoFirstGrid" target="_blank">Github.com/splintercode/PicoFirstGrid</a></p>
-                <p><a href="demo.html" target="_blank">See Large Example</a></p>
-            </div>
-        </section>
-
-
-        <section class="code">
-            <div class="col_6">
-                <h2>HTML</h2>
-                <pre class="code">
-                    <code>
-&ltsection class="demo"&gt
-        &lth2&gtExample 2 col&lt/h2&gt
-        &ltdiv class="col_6"&gt
-            &ltp&gt
-            Lorem ipsum dolor sit amet, 
-            consectetur adipisicing elit.   
-            &lt/p&gt
-        &lt/div&gt
-        &ltdiv class="col_6 omega"&gt
-            &ltp&gt
-            Lorem ipsum dolor sit amet, 
-            consectetur adipisicing elit.   
-            &lt/p&gt
-        &lt/div&gt
-&lt/section&gt
-                    </code>
+    <header>
+        <h1>CSS Dual Grid</h1>
+    </header>
+    <main class="container indexPage">
+        <section class="box">
+            <p>Dual Grid is a simple mobile first CSS grid. The grid is designed to have a default break point for the majority of content and a secondary for fined tuned control for breakpoints. The first primary default is optimized for single column layout. The default primary grid is triggered at 56em (896px) wide. The naming convention for the default primary column is .col_1</p>
+            <p>A secondary grid is for the fined tuned control over your breakpoints. All .col start at 100% mobile first. To enable cols at certain width use media queries. Secondary grid follows the naming convention col__1 (two underscores).</p>
+            <h2>Primary Grid</h2>
+            <hr />
+            <code>
+                <pre>
+&lt;section&gt; 
+    &lt;div class=&quot;col_6&quot;&gt;&lt;/div&gt; 
+    &lt;div class=&quot;col_6 omega&quot;&gt;&lt;/div&gt; 
+&lt;/section&gt;
                 </pre>
-            </div>
-            <div class="col_6 omega">
-                <h2>CSS</h2>
-                <pre class="code">
-                    <code>
-@media screen and (min-width: 25em) {
-    .demo .col_6 {
-        width: 49%;
+            </code>
+            <section class="dualGrid">
+                <div class="col_1">.col_1</div>
+                <div class="col_1">.col_1</div>
+                <div class="col_1">.col_1</div>
+                <div class="col_1">.col_1</div>
+                <div class="col_1">.col_1</div>
+                <div class="col_1">.col_1</div>
+                <div class="col_1">.col_1</div>
+                <div class="col_1">.col_1</div>
+                <div class="col_1">.col_1</div>
+                <div class="col_1">.col_1</div>
+                <div class="col_1">.col_1</div>
+                <div class="col_1 omega">.col_1</div>
+
+                <div class="col_2">.col_2</div>
+                <div class="col_2">.col_2</div>
+                <div class="col_2">.col_2</div>
+                <div class="col_2">.col_2</div>
+                <div class="col_2">.col_2</div>
+                <div class="col_2 omega">.col_2</div>
+
+                <div class="col_3">.col_3</div>
+                <div class="col_3">.col_3</div>
+                <div class="col_3">.col_3</div>
+                <div class="col_3 omega">.col_3</div>
+
+                <div class="col_4">.col_4</div>
+                <div class="col_4">.col_4</div>
+                <div class="col_4 omega">.col_4</div>
+
+                <div class="col_6">.col_6</div>
+                <div class="col_6 omega">.col_6</div>
+
+                <div class="col_12">.col_12</div>
+
+                <div class="col_5">.col_5</div>
+                <div class="col_7 omega">.col_7</div>
+
+                <div class="col_8">.col_8</div>
+                <div class="col_4 omega">.col_4</div>
+            </section>
+        </section>
+        <div class="clearBoth"></div><br />
+        <h2>Secondary Grid</h2>
+        <hr />
+        <section class="box">
+            <code>
+                <pre>
+&lt;section class=&quot;pageClass&quot;&gt; 
+    &lt;div class=&quot;col__3&quot;&gt;.col__3&lt;/div&gt; 
+    &lt;div class=&quot;col__3&quot;&gt;.col__3&lt;/div&gt; 
+    &lt;div class=&quot;col__3&quot;&gt;.col__3&lt;/div&gt; 
+    &lt;div class=&quot;col__3 omega&quot;&gt;.col__3&lt;/div&gt; 
+                    
+    &lt;div class=&quot;col__6&quot;&gt;&lt;/div&gt; 
+    &lt;div class=&quot;col__6 omega&quot;&gt;&lt;/div&gt; 
+&lt;/section&gt;
+
+@media all and (min-width: 30em)
+    .pageClass {
+        .col__3 {
+            width:23.5%;
+        }
     }
 }
-                    </code>
-                </pre>
-            </div>
-        </section>
-
-        <section class="demo">
-            <div class="col_12">
-                <h2>Example 2 col</h2>
-                <div class="col_6">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non   proident, sunt in culpa qui officia deserunt  mollit anim id est laborum.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-                <div class="col_6 omega">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non   proident, sunt in culpa qui officia deserunt  mollit anim id est laborum.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="code">
-            <h2>Pico Grid</h2>
-            <pre>
-                    <code>
-/*! 
-    https://github.com/splintercode/PicoFirstGrid
-    MIT License http://opensource.org/licenses/MIT
-    Pico first css grid 
-*/
-
-/* GRID CONSTANTS
-.col_1 { width: 6.5%; } 
-.col_2 { width: 15%; } 
-.col_3 { width: 23.5%; } 
-.col_4 { width: 32%; } 
-.col_5 { width: 40.5%; } 
-.col_6 { width: 49%; } 
-.col_7 { width: 57.5%; }
-.col_8 { width: 66%; } 
-.col_9 { width: 74.5%; } 
-.col_10 { width: 83%; } 
-.col_11 { width: 91.5%; } 
-.col_12 { width: 100%; } */ 
-
-.col_1,
-.col_2,
-.col_3,
-.col_4,
-.col_5,
-.col_6,
-.col_7,
-.col_8,
-.col_9,
-.col_10,
-.col_11,
-.col_12 {
-    width:100%;
-    margin: 0 2% 2% 0;
-    float: left;
-    display: block;
+@media all and (min-width: 40em)
+    .pageClass {
+        .col__6 {
+            width:49%;
+        }
+    }
 }
-
-.alpha{ margin-left:0; }
-.omega{ margin-right:0; }
-
-.container {
-    width: 96%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding:0 2%;
-}
-                    </code>
                 </pre>
+            </code>
+            <section class="pageClass">
+                <div class="col__3">.col__3</div>
+                <div class="col__3">.col__3</div>
+                <div class="col__3">.col__3</div>
+                <div class="col__3 omega">.col__3</div>
+                <div class="col__6">.col__6</div>
+                <div class="col__6 omega">.col__6</div>
+            </section>
         </section>
-    </section>
+    </main>
     <footer>
         <a href="http://www.webdesignis.me" target="_blank">Cory Bateman @ www.webdesignis.me</a>
     </footer>

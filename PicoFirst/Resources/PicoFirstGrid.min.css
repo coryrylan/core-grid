@@ -1,5 +1,0 @@
-/*! 
-    https://github.com/splintercode/PicoFirstGrid
-    MIT License http://opensource.org/licenses/MIT
-    Pico first css grid 
-*/.col_1,.col_10,.col_11,.col_12,.col_2,.col_3,.col_4,.col_5,.col_6,.col_7,.col_8,.col_9{width:100%;margin:0 2% 2% 0;float:left;display:block}.alpha{margin-left:0}.omega{margin-right:0}.container{width:96%;max-width:1200px;margin:0 auto;padding:0 2%}
