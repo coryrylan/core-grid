@@ -4,7 +4,6 @@
 <p>A secondary grid is for the fined tuned control over your breakpoints. All .col start at 100% mobile first. To enable cols at certain width use media queries. Secondary grid follows the naming convention col__1 (two underscores).</p>
 
 <h2>Primary Grid</h2>
-<hr />
             <code>
                 <pre>
 &lt;section&gt; 
@@ -16,7 +15,6 @@
 
 
 <h2>Secondary Grid</h2>
-<hr />
 <code>
 	<pre>
 &lt;section class=&quot;pageClass&quot;&gt; 
@@ -43,8 +41,8 @@
         }
     }
 }
-                </pre>
-            </code>
+	</pre>
+</code>
 
 
 
