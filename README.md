@@ -1,89 +1,52 @@
 <h1>Pico First Grid</h1>
 
-<p>
-  The <a href="http://splintercode.github.io/PicoFirstGrid/" target="_blank">Pico First Grid</a>
-   is a micro css grid. No base style. No resets. No framework. 
-  No defined breakpoints. No bs. Just a grid. 
-</p>
+<p>Dual Grid is a simple mobile first CSS grid. The grid is designed to have a default break point for the majority of content and a secondary for fined tuned control for breakpoints. The first primary default is optimized for single column layout. The default primary grid is triggered at 56em (896px) wide. The naming convention for the default primary column is .col_1</p>
+<p>A secondary grid is for the fined tuned control over your breakpoints. All .col start at 100% mobile first. To enable cols at certain width use media queries. Secondary grid follows the naming convention col__1 (two underscores).</p>
 
-<p>
-    The grid is simple and gives you the designer more control of your pages. All 12 columns start at 100% single 
-    column design for mobile. As you have more space on you page you turn your grid on and off
-    with min-width media queries. 
-</p>
+<h2>Primary Grid</h2>
+<hr />
+            <code>
+                <pre>
+&lt;section&gt; 
+    &lt;div class=&quot;col_6&quot;&gt;&lt;/div&gt; 
+    &lt;div class=&quot;col_6 omega&quot;&gt;&lt;/div&gt; 
+&lt;/section&gt;
+                </pre>
+            </code>
 
-<p>
-    The column widths are defined in a comment for reference. It is up to you to simply add the widths in your media queries.
-    This give you the control to turn the grid off and on based on your content and not device based breakpoints.
-    Grids dont need to be complex to make complex layouts.
-</p>
 
-<h2>HTML</h2>
-        <section class="demo">
-            <h2>Example 2 col</h2>
-            <div class="col_6">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non   proident, sunt in culpa qui officia deserunt  mollit anim id est laborum.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-            <div class="col_6 omega">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non   proident, sunt in culpa qui officia deserunt  mollit anim id est laborum.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-        </section>
-        
-        
-<h2>CSS</h2>
-<pre>
-@media screen and (min-width: 25em) {
-    .demo .col_6 {
-        width: 49%;
+<h2>Secondary Grid</h2>
+<hr />
+<code>
+	<pre>
+&lt;section class=&quot;pageClass&quot;&gt; 
+    &lt;div class=&quot;col__3&quot;&gt;.col__3&lt;/div&gt; 
+    &lt;div class=&quot;col__3&quot;&gt;.col__3&lt;/div&gt; 
+    &lt;div class=&quot;col__3&quot;&gt;.col__3&lt;/div&gt; 
+    &lt;div class=&quot;col__3 omega&quot;&gt;.col__3&lt;/div&gt; 
+                    
+    &lt;div class=&quot;col__6&quot;&gt;&lt;/div&gt; 
+    &lt;div class=&quot;col__6 omega&quot;&gt;&lt;/div&gt; 
+&lt;/section&gt;
+
+@media all and (min-width: 30em)
+    .pageClass {
+        .col__3 {
+            width:23.5%;
+        }
     }
 }
-</pre>
-
-<h2>Pico Grid</h2>
-<pre>
-/*! https://github.com/splintercode/PicoFirstGrid */
-/* GRID CONSTANTS
-.col_1 { width: 6.5%; } 
-.col_2 { width: 15%; } 
-.col_3 { width: 23.5%; } 
-.col_4 { width: 32%; } 
-.col_5 { width: 40.5%; } 
-.col_6 { width: 49%; } 
-.col_7 { width: 57.5%; }
-.col_8 { width: 66%; } 
-.col_9 { width: 74.5%; } 
-.col_10 { width: 83%; } 
-.col_11 { width: 91.5%; } 
-.col_12 { width: 100%; } */ 
-
-.col_1,
-.col_2,
-.col_3,
-.col_4,
-.col_5,
-.col_6,
-.col_7,
-.col_8,
-.col_9,
-.col_10,
-.col_11,
-.col_12 {
-    width:100%;
-    margin: 0 2% 1% 0;
-    float: left;
-    display: block;
+@media all and (min-width: 40em)
+    .pageClass {
+        .col__6 {
+            width:49%;
+        }
+    }
 }
+                </pre>
+            </code>
 
-.alpha{ margin-left:0; }
-.omega{ margin-right:0; }
 
-.container {
-    width: 96%;
-    max-width: 1200px;
-    margin: 0 auto;
-	padding:0 2%;
-}
-</pre>
 
 <h2>License</h2>
 <p>
