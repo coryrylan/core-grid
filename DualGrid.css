@@ -36,7 +36,7 @@
 }
 
 /* --- Primary Auto Grid --- */
-@media all and (min-width: 56em) {
+@media all and (min-width: 44em) {
 	.col_1 { width: 6.5%; } 
 	.col_2 { width: 15%; } 
 	.col_3 { width: 23.5%; } 
