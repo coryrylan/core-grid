@@ -1,0 +1,168 @@
+@import '_normalize';
+@import '_util';
+
+*, *:before, *:after {
+  /* Chrome 9-, Safari 5-, iOS 4.2-, Android 3-, Blackberry 7- */
+  -webkit-box-sizing: border-box; 
+
+  /* Firefox (desktop or Android) 28- */
+  -moz-box-sizing: border-box;
+
+  /* Firefox 29+, IE 8+, Chrome 10+, Safari 5.1+, Opera 9.5+, iOS 5+, Opera Mini Anything, Blackberry 10+, Android 4+ */
+  box-sizing: border-box;
+}
+
+body {
+  font-size:16px;
+  font-family: 'Open Sans', Helvetica, Arial, "Lucida Grande", sans- serif;
+  overflow-x:hidden;
+}
+
+.clearBoth {
+    clear:both;
+}
+
+h1,h2,h3 { 
+    font-family: Helvetica, Arial, "Lucida Grande", sans- serif;
+	border-bottom:solid 1px #21C40B;
+}
+
+header {
+		width:100%;
+		background-color:#51AD38;
+		overflow:auto;
+		margin-bottom:2%;
+
+	h1 {
+		color:#FFF;
+		padding: 8px 0;
+		margin: 0;
+		border-bottom:0;
+	}
+}
+
+h2, a {
+    margin:1% 0%;
+    color:#51AD38;
+}
+
+nav {
+	a {
+		display:block;
+		padding:2%;
+	}
+}
+
+footer {
+    clear:both;
+    width:100%;
+    padding:3% 0%;
+    text-align:center;
+	background:#2d2d2d;
+
+	a {
+        text-decoration:none;
+        font-size:1.3em;
+
+		&:hover {
+            text-decoration:underline;
+        }
+    }
+}
+
+hr {
+	height:0;
+	border-bottom:1px solid #51AD38;
+	width:100%;
+}
+
+ul {
+	pre {
+		font-family: 'Open Sans', Helvetica, Arial, "Lucida Grande", sans- serif;
+	}
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	border: 1px solid #2d2d2d;
+	width: 100%;
+	background:#FFF;
+	font-size:0.9em;
+}
+
+td, th {
+  border: 1px solid #2d2d2d;
+  padding: 0.5em;
+  text-align: left;
+  font-size:0.9em;
+}
+
+tr:nth-child(even) {
+	background: #E5E5E5;
+}
+
+tr:nth-child(odd) {
+	background:#FFF;
+}
+
+thead, thead th {
+	background:#51AD38;
+	color:#FFF;
+}
+
+@include respond-max(40em) {
+	table {
+		tr, th, td {
+			display:block;
+			width:100%;
+			border:none;
+			border-top:1px solid #2d2d2d;
+			background:#FFF;
+		}
+
+		tr {
+			overflow:hidden;
+		}
+
+		thead, tfoot {
+			display:none;
+		}
+
+		td:nth-child(even) {
+			background: #E5E5E5;
+		}
+
+		td:nth-child(odd) {
+			background:#FFF;
+		}
+	}
+}
+
+code pre {
+  display: block;
+  width: auto;
+  overflow: auto;
+  white-space: pre;
+  word-wrap: normal;
+  padding: 10px; 
+  color:#51AD38; 
+}
+
+/* Core Grid */
+.coreGrid, .pageClass {
+    text-align: center;
+    font-size: 1.1em;
+
+	div {
+		min-height: 65px;
+		padding-top: 35px;
+		background: #CCC;
+	}
+}
+
+@media all and (min-width: 33em) {
+    .pageClass .col__6 {
+        width: 49%;
+    }
+}

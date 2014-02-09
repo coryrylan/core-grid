@@ -1,32 +1,170 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>CSS Dual Grid</title>
+    <title>Core Grid</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link href="normalize.css" rel="stylesheet" />
-    <link href="DualGrid.css" rel="stylesheet" />
-    <link href="index.css" rel="stylesheet" />
+
+    <link href="Content/coreGrid.css" rel="stylesheet" />
+    <link href="Content/index.css" rel="stylesheet" />
 </head>
 <body>
     <header>
-        <h1>CSS Dual Grid</h1>
-    </header>
+        <div class="container"><h1>Core Grid</h1></div>
+</header>
     <main class="container indexPage">
-        <section class="box">
-            <p>Dual Grid is a simple mobile first CSS grid. The grid is designed to have a default break point for the majority of content and a secondary for fined tuned control for breakpoints. The first primary default is optimized for single column layout. The default primary grid is triggered at 44em (704px) wide. The naming convention for the default primary column is .col_1</p>
-            <p>A secondary grid is for the fined tuned control over your breakpoints. All .col start at 100% mobile first. To enable cols at certain width use media queries. Secondary grid follows the naming convention col__1 (two underscores).</p>
-            <h2>Primary Grid</h2>
-            <hr />
+        <section class="col_3">
+            <nav>
+                <a href="#CoreGridSystem">Core Grid System</a>
+                <a href="#PrimaryDefaultGrid">Primary Default Grid</a>
+                <a href="#SecondaryControlGrid">Secondary Control Grid</a>
+                <a href="#GridLayout">Grid Layout</a>
+                <a href="#Utilities">Utilities</a>
+            </nav>
+        </section>
+        <section class="col_9 omega">
+            <h2 id="CoreGridSystem">Core Grid System</h2>
+            <p>
+                Core Grid is a simple mobile first Sass/CSS grid. The grid is designed to have default break points for the majority
+                of content layouts and a secondary semantic grid for fined tuned control over layouts.
+            </p>
+
+            
+            <h2 id="PrimaryDefaultGrid">Primary Default Grid</h2>
+            <p>
+                The first primary default is optimized for single
+                column layout. All columns start at a width of 100%. Use the specified class name to trigger columns at the corresponding container width.
+                <br /><br />
+                The class structure is the following <strong>(.column_width_breakpoint)</strong><br /><br />
+                Example ".col_6_md"<br />
+                <ul>
+                    <li>".col" defines that you want a column.</li>
+                    <li>"_6" defines how many columns wide you want the column to be.</li>
+                    <li>"_md" defines the default breakpoint you would like your column width to be triggered at.</li>
+                    <li>"omega" class must be applied to the last column of any given row to remove far right gutter.</li>
+                </ul>
+            </p><br />
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>
+                            Extra Small devices
+                            <small>Phones</small>
+                        </th>
+                        <th>
+                            Small devices
+                            <small>Phones/Tablets (≥540px)</small>
+                        </th>
+                        <th>
+                            Medium devices
+                            <small>Tablets/Laptops (≥720px)</small>
+                        </th>
+                        <th>
+                            Large devices
+                            <small>Laptop/Desktop (≥960px)</small>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Behavior</th>
+                        <td>Always 100% </td>
+                        <td colspan="3">Width 100% to start, horizontal at above breakpoints</td>
+                    </tr>
+                    <tr>
+                        <th>Container width</th>
+                        <td>Auto</td>
+                        <td>540px</td>
+                        <td>720px</td>
+                        <td>960px</td>
+                    </tr>
+                    <tr>
+                        <th>CSS Class</th>
+                        <td><code>.col_12 (or) .row</code></td>
+                        <td><code>.col_1_sm</code></td>
+                        <td><code>.col_1_md (or) .col_1</code></td>
+                        <td><code>.col_1_lg</code></td>
+                    </tr>
+                    <tr>
+                        <th># of columns</th>
+                        <td>1</td>
+                        <td colspan="3">12</td>
+                    </tr>
+                    <tr>
+                        <th>Column width</th>
+                        <td>Auto</td>
+                        <td colspan="3">6.5% at specified breakpoint</td>                     
+                    </tr>
+                    <tr>
+                        <th>Gutter width</th>
+                        <td>Auto</td>
+                        <td colspan="4">2% width, right of column except last column.</td>
+                    </tr>
+                    <tr>
+                        <th>Nestable</th>
+                        <td colspan="4">Yes</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br /><br />
+            <h2>Primary Grid Example</h2>
             <code>
                 <pre>
 &lt;section&gt; 
-    &lt;div class=&quot;col_6&quot;&gt;&lt;/div&gt; 
-    &lt;div class=&quot;col_6 omega&quot;&gt;&lt;/div&gt; 
+    &lt;div class=&quot;col_4_sm&quot;&gt;&lt;/div&gt; 
+    &lt;div class=&quot;col_8_sm omega&quot;&gt;&lt;/div&gt;
+ 
+    &lt;div class=&quot;col_6_md&quot;&gt;&lt;/div&gt; 
+    &lt;div class=&quot;col_6_md omega&quot;&gt;&lt;/div&gt;
+ 
+    &lt;div class=&quot;col_4_lg&quot;&gt;&lt;/div&gt; 
+    &lt;div class=&quot;col_4_lg&quot;&gt;&lt;/div&gt; 
+    &lt;div class=&quot;col_4_lg omega&quot;&gt;&lt;/div&gt; 
 &lt;/section&gt;
                 </pre>
             </code>
-            <section class="dualGrid">
+            <section class="coreGrid">
+                <div class="col_4_sm">.col_4_sm</div>
+                <div class="col_8_sm omega">.col_8_sm</div>
+                <div class="col_6_md">.col_6_md</div>
+                <div class="col_6_md omega">.col_6_md</div>
+                <div class="col_4_lg">.col_4_lg</div>
+                <div class="col_4_lg">.col_4_lg</div>
+                <div class="col_4_lg omega">.col_4_lg</div>
+            </section>
+            <div class="clearBoth"></div>
+            <br /><br />
+            <h2 id="SecondaryControlGrid">Secondary Control Grid</h2>
+            <p>A secondary grid is for the fined tuned control over your breakpoints. All .col start at 100% mobile first. 
+            To enable cols at certain width use media queries. Secondary grid follows the naming convention col__1 
+            (two underscores).</p>
+            <section>
+                <code>
+                    <pre>
+&lt;section class=&quot;pageClass&quot;&gt; 
+    &lt;div class=&quot;col__6&quot;&gt;&lt;/div&gt; 
+    &lt;div class=&quot;col__6 omega&quot;&gt;&lt;/div&gt; 
+&lt;/section&gt;
+@media all and (min-width: 33em)
+    .pageClass {
+        .col__6 {
+            width:49%;
+        }
+    }
+}
+                </pre>
+                </code>
+                <section class="pageClass">
+                    <div class="col__6">.col__6</div>
+                    <div class="col__6 omega">.col__6</div>
+                </section>
+            </section>
+            <div class="clearBoth"></div>
+            <br /><br />
+
+            <h2 id="GridLayout">Grid Layout</h2>
+            <section class="coreGrid">
                 <div class="col_1">.col_1</div>
                 <div class="col_1">.col_1</div>
                 <div class="col_1">.col_1</div>
@@ -68,50 +206,9 @@
                 <div class="col_4 omega">.col_4</div>
             </section>
         </section>
-        <div class="clearBoth"></div><br />
-        <h2>Secondary Grid</h2>
-        <hr />
-        <section class="box">
-            <code>
-                <pre>
-&lt;section class=&quot;pageClass&quot;&gt; 
-    &lt;div class=&quot;col__3&quot;&gt;.col__3&lt;/div&gt; 
-    &lt;div class=&quot;col__3&quot;&gt;.col__3&lt;/div&gt; 
-    &lt;div class=&quot;col__3&quot;&gt;.col__3&lt;/div&gt; 
-    &lt;div class=&quot;col__3 omega&quot;&gt;.col__3&lt;/div&gt; 
-                    
-    &lt;div class=&quot;col__6&quot;&gt;&lt;/div&gt; 
-    &lt;div class=&quot;col__6 omega&quot;&gt;&lt;/div&gt; 
-&lt;/section&gt;
-
-@media all and (min-width: 30em)
-    .pageClass {
-        .col__3 {
-            width:23.5%;
-        }
-    }
-}
-@media all and (min-width: 40em)
-    .pageClass {
-        .col__6 {
-            width:49%;
-        }
-    }
-}
-                </pre>
-            </code>
-            <section class="pageClass">
-                <div class="col__3">.col__3</div>
-                <div class="col__3">.col__3</div>
-                <div class="col__3">.col__3</div>
-                <div class="col__3 omega">.col__3</div>
-                <div class="col__6">.col__6</div>
-                <div class="col__6 omega">.col__6</div>
-            </section>
-        </section>
     </main>
     <footer>
-        <a href="http://www.webdesignis.me" target="_blank">Cory Bateman @ www.webdesignis.me</a>
+        <a href="http://www.webdesignis.me" target="_blank">Cory Bateman www.corycode.me</a>
     </footer>
 </body>
 </html>
