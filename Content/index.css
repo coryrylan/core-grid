@@ -361,13 +361,19 @@ header {
     margin: 0;
     border-bottom: 0; }
 
-h2, a {
+h2, h3, a {
   margin: 1% 0%;
   color: #51AD38; }
 
 nav a {
   display: block;
   padding: 2%; }
+
+.linkHandle {
+  clear: both; }
+
+main {
+  overflow: auto; }
 
 footer {
   clear: both;
@@ -441,12 +447,25 @@ code pre {
 .coreGrid, .pageClass {
   text-align: center;
   font-size: 1.1em; }
-  .coreGrid div, .pageClass div {
-    min-height: 65px;
-    padding-top: 35px;
-    background: #CCC; }
+
+.box {
+  min-height: 65px;
+  padding-top: 35px;
+  background: #CCC; }
 
 @media all and (min-width: 33em) {
   .pageClass .col__6 {
-    width: 49%; } }
+    width: 50%; } }
+@media all and (min-width: 45em) {
+  nav, header {
+    position: fixed; }
+
+  nav {
+    width: 200px; }
+
+  .headerBuff {
+    margin-top: 80px; }
+
+  .linkHandle {
+    margin-bottom: 83px; } }
 
