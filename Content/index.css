@@ -440,7 +440,6 @@ code pre {
   overflow: auto;
   white-space: pre;
   word-wrap: normal;
-  padding: 10px;
   color: #51AD38; }
 
 /* Core Grid */
@@ -449,14 +448,13 @@ code pre {
   font-size: 1.1em; }
 
 .box {
-  min-height: 65px;
-  padding-top: 35px;
+  padding: 15px 0;
   background: #CCC; }
 
-@media all and (min-width: 33em) {
+@media screen and (min-width: 33em) {
   .pageClass .col__6 {
     width: 50%; } }
-@media all and (min-width: 45em) {
+@media screen and (min-width: 45em) {
   nav, header {
     position: fixed; }
 
@@ -467,5 +465,5 @@ code pre {
     margin-top: 80px; }
 
   .linkHandle {
-    margin-bottom: 83px; } }
+    margin-bottom: 50px; } }
 
