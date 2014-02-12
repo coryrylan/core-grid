@@ -414,6 +414,12 @@ tr:nth-child(even) {
 tr:nth-child(odd) {
   background: #FFF; }
 
+.visibleTable tr:nth-child(odd), .visibleTable tr:nth-child(even) {
+  background: #FFF; }
+.visibleTable .highlight {
+  background: #51AD38;
+  color: #FFF; }
+
 thead, thead th {
   background: #51AD38;
   color: #FFF; }

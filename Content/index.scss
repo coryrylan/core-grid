@@ -113,6 +113,17 @@ tr:nth-child(odd) {
 	background:#FFF;
 }
 
+.visibleTable {
+	tr:nth-child(odd), tr:nth-child(even) {
+		background:#FFF;
+	}
+
+	.highlight {
+		background:#51AD38;
+		color:#FFF;
+	}
+}
+
 thead, thead th {
 	background:#51AD38;
 	color:#FFF;

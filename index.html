@@ -6,12 +6,12 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
     <!--[if gt IE 8]><!-->
-        <link href="Content/coreGrid.min.css" rel="stylesheet" />   
+        <link href="Content/coreGrid.css" rel="stylesheet" />   
     <!--<![endif]-->
     <!--[if lte IE 8]>
         <link href="Content/oldIE.min.css" rel="stylesheet" />
     <![endif]-->
-        <link href="Content/index.min.css" rel="stylesheet" />
+        <link href="Content/index.css" rel="stylesheet" />
 </head>
 <body id="CoreGridSystem">
     <header>
@@ -79,7 +79,7 @@
                         <tbody>
                             <tr>
                                 <th>Behavior</th>
-                                <td>Always 100% </td>
+                                <td>Always horizontal</td>
                                 <td colspan="3">Width 100% to start, horizontal at above breakpoints</td>
                             </tr>
                             <tr>
@@ -91,7 +91,7 @@
                             </tr>
                             <tr>
                                 <th>CSS Class</th>
-                                <td><code>.col_12 (or) .row</code></td>
+                                <td><code>.col_1_xs</code></td>
                                 <td><code>.col_1_sm</code></td>
                                 <td><code>.col_1_md (or) .col_1</code></td>
                                 <td><code>.col_1_lg</code></td>
@@ -102,18 +102,15 @@
                             </tr>
                             <tr>
                                 <th>Columns</th>
-                                <td>1</td>
-                                <td colspan="3">12</td>
+                                <td>12</td>
                             </tr>
                             <tr>
                                 <th>Column width</th>
-                                <td>Auto</td>
-                                <td colspan="3">8.333% at specified breakpoint</td>
+                                <td colspan="4">8.333% at specified breakpoint</td>
                             </tr>
                             <tr>
                                 <th>Gutter width</th>
-                                <td>Auto</td>
-                                <td colspan="4">1% width, right and left of column.</td>
+                                <td colspan="4">8px width, right and left of column. 16px bottom</td>
                             </tr>
                         </tbody>
                     </table>
@@ -260,6 +257,110 @@
                         for our media queries to support ie8 and below. To read more on this please read Jake Archibalds great blog post
                         <a href="http://jakearchibald.github.io/sass-ie/" target="_blank">here</a>.
                     </p>
+
+                    <p>Core Grid contains multiple helper classes to show and hide content to the cooresponding grid breakpoints.</p>
+                    <table class="table visibleTable">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>
+                                    Extra Small devices
+                                    <small>Phones</small>
+                                </th>
+                                <th>
+                                    Small devices
+                                    <small>Phones/Tablets (≥540px)</small>
+                                </th>
+                                <th>
+                                    Medium devices
+                                    <small>Tablets/Laptops (≥720px)</small>
+                                </th>
+                                <th>
+                                    Large devices
+                                    <small>Laptop/Desktop (≥960px)</small>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Container width</th>
+                                <td>auto</td>
+                                <td>540px</td>
+                                <td>720px</td>
+                                <td>960px</td>
+                            </tr>
+                            <tr>
+                                <th>.visible</th>
+                                <td class="highlight">Visible</td>
+                                <td class="highlight">Visible</td>
+                                <td class="highlight">Visible</td>
+                                <td class="highlight">Visible</td>
+                            </tr>
+                            <tr>
+                                <th>.hidden</th>
+                                <td>Hidden</td>
+                                <td>Hidden</td>
+                                <td>Hidden</td>
+                                <td>Hidden</td>
+                            </tr>
+                            <tr>
+                                <th>.visible_xs</th>
+                                <td class="highlight">Visible</td>
+                                <td class="highlight">Visible</td>
+                                <td class="highlight">Visible</td>
+                                <td class="highlight">Visible</td>
+                            </tr>
+                            <tr>
+                                <th>.visible_sm</th>
+                                <td>Hidden</td>
+                                <td class="highlight">Visible</td>
+                                <td class="highlight">Visible</td>
+                                <td class="highlight">Visible</td>
+                            </tr>
+                            <tr>
+                                <th>.visible_md</th>
+                                <td>Hidden</td>
+                                <td>Hidden</td>
+                                <td class="highlight">Visible</td>
+                                <td class="highlight">Visible</td>
+                            </tr>
+                            <tr>
+                                <th>.visible_lg</th>
+                                <td>Hidden</td>
+                                <td>Hidden</td>
+                                <td>Hidden</td>
+                                <td class="highlight">Visible</td>
+                            </tr>
+                            <tr>
+                                <th>.hidden_xs</th>
+                                <td>Hidden</td>
+                                <td>Hidden</td>
+                                <td>Hidden</td>
+                                <td>Hidden</td>
+                            </tr>
+                            <tr>
+                                <th>.hidden_sm</th>
+                                <td class="highlight">Visible</td>
+                                <td>Hidden</td>
+                                <td>Hidden</td>
+                                <td>Hidden</td>
+                            </tr>
+                            <tr>
+                                <th>.hidden_md</th>
+                                <td class="highlight">Visible</td>
+                                <td class="highlight">Visible</td>
+                                <td>Hidden</td>
+                                <td>Hidden</td>
+                            </tr>
+                            <tr>
+                                <th>.hidden_lg</th>
+                                <td class="highlight">Visible</td>
+                                <td class="highlight">Visible</td>
+                                <td class="highlight">Visible</td>
+                                <td>Hidden</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </section>
         </div>
