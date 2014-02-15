@@ -1,5 +1,7 @@
 <h1>Core Grid</h1>
-<p><a href="http://splintercode.github.io/CoreGrid">Core Grid</a> is a simple mobile first Sass/CSS grid. 
+<p>
+  <a href="http://splintercode.github.io/CoreGrid">Core Grid</a> is a simple mobile first Sass/CSS grid.
+</p>
 <h2>License</h2>
 <p>
 This code is free to use under the MIT License.
