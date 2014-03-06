@@ -1,4 +1,4 @@
-<h1>Core Grid</h1>
+<h1>Core Grid 1.0</h1>
 <p>
   <a href="http://splintercode.github.io/CoreGrid">Core Grid</a> is a simple mobile first Sass/CSS grid.
 </p>
