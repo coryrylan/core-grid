@@ -1,4 +1,3 @@
-@import '_normalize';
 @import '_util';
 
 *, *:before, *:after {
@@ -18,7 +17,7 @@ body {
   overflow-x:hidden;
 }
 
-.clearBoth {
+.clear-both {
     clear:both;
 }
 
@@ -53,7 +52,7 @@ nav {
 	}
 }
 
-.linkHandle {
+.link-handle {
 	clear:both;
 }
 
@@ -113,7 +112,7 @@ tr:nth-child(odd) {
 	background:#FFF;
 }
 
-.visibleTable {
+.visible-table {
 	tr:nth-child(odd), tr:nth-child(even) {
 		background:#FFF;
 	}
@@ -167,18 +166,18 @@ code pre {
 }
 
 /* Core Grid */
-.coreGrid, .pageClass {
+.core-grid, .page-class {
     text-align: center;
     font-size: 1.1em;
 }
 
-.gridBox {
+.grid-box {
 	padding: 15px 0;
 	background: #CCC;
 }
 
 @include respond-min(33em) {
-    .pageClass .col__6 {
+    .page-class .col-6-c {
         width: 50%;
     }
 }
@@ -192,11 +191,11 @@ code pre {
 		width: 200px;
 	}
 
-	.headerBuff {
+	.header-buff {
 		margin-top:80px;
 	}
 
-	.linkHandle {
+	.link-handle {
 		margin-bottom:50px;
 	}
 }
