@@ -56,6 +56,23 @@ nav {
 	clear:both;
 }
 
+.btn {
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+	width: 300px;
+	border-radius: 4px;
+	background-color: #51AD38;
+	padding: 10px 2%;
+	font-size: 1.3em;
+	color: #FFF;
+	text-decoration: none;
+	
+	&:hover {
+		background-color:#5ABF3E;
+	}
+}
+
 main {
 	overflow:auto;
 }

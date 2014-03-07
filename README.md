@@ -1,6 +1,7 @@
 <h1>Core Grid 1.0</h1>
 <p>
-  <a href="http://splintercode.github.io/CoreGrid">Core Grid</a> is a simple mobile first Sass/CSS grid.
+  <a href="http://splintercode.github.io/CoreGrid">Veiw Core Grid Documentation</a>
+  Core Grid is a simple mobile first Sass/CSS grid.
 </p>
 <h2>License</h2>
 <p>
