@@ -1,4 +1,4 @@
-*, *:before, *:after {
+﻿*, *:before, *:after {
   /* Chrome 9-, Safari 5-, iOS 4.2-, Android 3-, Blackberry 7- */
   -webkit-box-sizing: border-box;
   /* Firefox (desktop or Android) 28- */
@@ -121,6 +121,7 @@ thead, thead th {
     background: #E5E5E5; }
   table td:nth-child(odd) {
     background: #FFF; } }
+
 code pre {
   display: block;
   width: auto;
@@ -141,16 +142,15 @@ code pre {
 @media screen and (min-width: 33em) {
   .page-class .col-6-c {
     width: 50%; } }
+
 @media screen and (min-width: 45em) {
   nav, header {
     position: fixed; }
-
   nav {
     width: 200px; }
-
   .header-buff {
     margin-top: 80px; }
-
   .link-handle {
     margin-bottom: 50px; } }
 
+/*# sourceMappingURL=index.css.map */
