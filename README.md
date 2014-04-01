@@ -5,7 +5,8 @@
 </p>
 <h2>Latest changes</h2>
 <ul>
-    <li>Version 1.1 - Minor Bug Fixes and source maps</li>
+	<li>Version 1.1.1 - Minor Bug Fixes</li>
+    <li>Version 1.1   - Minor Bug Fixes and source maps</li>
 </ul>
 <h3>License</h3>
 <p>
