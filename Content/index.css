@@ -1,4 +1,4 @@
-﻿*, *:before, *:after {
+*, *:before, *:after {
   /* Chrome 9-, Safari 5-, iOS 4.2-, Android 3-, Blackberry 7- */
   -webkit-box-sizing: border-box;
   /* Firefox (desktop or Android) 28- */
@@ -152,5 +152,3 @@ code pre {
     margin-top: 80px; }
   .link-handle {
     margin-bottom: 50px; } }
-
-/*# sourceMappingURL=index.css.map */

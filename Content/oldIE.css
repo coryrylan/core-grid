@@ -1,4 +1,4 @@
-﻿/*! 
+/*! 
     https://github.com/splintercode/CoreGrid
     MIT License http://opensource.org/licenses/MIT
     Core Grid 1.1
@@ -108,7 +108,7 @@
 .visible-sm {
   display: block; }
 
-.hidden_sm {
+.hidden-sm {
   display: none; }
 
 
@@ -140,13 +140,13 @@
 .col-9, .col-9-md {
   width: 75%; }
 
-.col-10, .col_10-md {
+.col-10, .col-10-md {
   width: 83.33%; }
 
-.col-11, .col_11-md {
+.col-11, .col-11-md {
   width: 91.663%; }
 
-.col-12, .col_12-md {
+.col-12, .col-12-md {
   width: 100%; }
 
 .visible-md {
@@ -228,5 +228,3 @@
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 2%; }
-
-/*# sourceMappingURL=Oldie.css.map */
