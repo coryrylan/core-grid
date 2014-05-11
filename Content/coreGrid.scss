@@ -3,7 +3,7 @@
 /*! 
     https://github.com/splintercode/CoreGrid
     MIT License http://opensource.org/licenses/MIT
-    Core Grid 1.1
+    Core Grid 1.2
 */
 
 $sm-break: 33.75em;
@@ -109,7 +109,7 @@ $cols: 12;
     padding-right: 0;
 }
 
-/* --- Extra Small Auto Grid --- */
+/* #region --- Extra Small Auto Grid --- */
 @for $i from 1 through $cols {
     .col-#{$i}-#{'xs'} {
         width: 1 * percentage($i/$cols)
@@ -123,8 +123,9 @@ $cols: 12;
 .hidden-xs, .hidden {
     display: none;
 }
+/* #endregion */
 
-/* --- Small Auto Grid 540px and greater --- */
+/* #region --- Small Auto Grid 540px and greater --- */
 @include respond-min($sm-break) {
     @for $i from 1 through $cols {
         .col-#{$i}-#{'sm'} {
@@ -140,8 +141,9 @@ $cols: 12;
         display: none;
     }
 }
+/* #endregion */
 
-/* --- Primary Medium Auto Grid 720px and greater --- */
+/* #region --- Primary Medium Auto Grid 720px and greater --- */
 @include respond-min($md-break) {
     @for $i from 1 through $cols {
         .col-#{$i}-#{'md'}, .col-#{$i} {
@@ -157,8 +159,9 @@ $cols: 12;
         display: none;
     }
 }
+/* #endregion */
 
-/* --- Large Auto Grid 960px and greater --- */
+/* #region --- Large Auto Grid 960px and greater --- */
 @include respond-min($lg-break) {
     @for $i from 1 through $cols {
         .col-#{$i}-#{'lg'} {
@@ -174,7 +177,7 @@ $cols: 12;
         display: none;
     }
 }
-
+/* #endregion */
 
 /* --- Secondary Semantic Control Grid ---
 .col-1-c { width: 8.333%; } 

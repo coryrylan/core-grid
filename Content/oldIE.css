@@ -1,7 +1,7 @@
 /*! 
     https://github.com/splintercode/CoreGrid
     MIT License http://opensource.org/licenses/MIT
-    Core Grid 1.1
+    Core Grid 1.2
 */
 *, *:before, *:after {
   /* Chrome 9-, Safari 5-, iOS 4.2-, Android 3-, Blackberry 7- */
@@ -25,7 +25,7 @@
 .omega {
   padding-right: 0; }
 
-/* --- Extra Small Auto Grid --- */
+/* #region --- Extra Small Auto Grid --- */
 .col-1-xs {
   width: 8.33333%; }
 
@@ -68,7 +68,8 @@
 .hidden-xs, .hidden {
   display: none; }
 
-/* --- Small Auto Grid 540px and greater --- */
+/* #endregion */
+/* #region --- Small Auto Grid 540px and greater --- */
 .col-1-sm {
   width: 8.33333%; }
 
@@ -112,7 +113,8 @@
   display: none; }
 
 
-/* --- Primary Medium Auto Grid 720px and greater --- */
+/* #endregion */
+/* #region --- Primary Medium Auto Grid 720px and greater --- */
 .col-1-md, .col-1 {
   width: 8.33333%; }
 
@@ -156,7 +158,8 @@
   display: none; }
 
 
-/* --- Large Auto Grid 960px and greater --- */
+/* #endregion */
+/* #region --- Large Auto Grid 960px and greater --- */
 .col-1-lg {
   width: 8.33333%; }
 
@@ -200,6 +203,7 @@
   display: none; }
 
 
+/* #endregion */
 /* --- Secondary Semantic Control Grid ---
 .col-1-c { width: 8.333%; } 
 .col-2-c { width: 16.666%; } 
