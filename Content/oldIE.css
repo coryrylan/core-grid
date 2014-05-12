@@ -12,7 +12,7 @@
   box-sizing: border-box; }
 
 /* --- Column Set Up --- */
-.row, .col-1-xs, .col-2-xs, .col-3-xs, .col-4-xs, .col-5-xs, .col-6-xs, .col-7-xs, .col-8-xs, .col-9-xs, .col-10-xs, .col-11-xs, .col-12-xs, .col-1-sm, .col-2-sm, .col-3-sm, .col-4-sm, .col-5-sm, .col-6-sm, .col-7-sm, .col-8-sm, .col-9-sm, .col-10-sm, .col-11-sm, .col-12-sm, .col-1-md, .col-2-md, .col-3-md, .col-4-md, .col-5-md, .col-6-md, .col-7-md, .col-8-md, .col-9-md, .col-10-md, .col-11-md, .col-12-md, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col-1-lg, .col-2-lg, .col-3-lg, .col-4-lg, .col-5-lg, .col-6-lg, .col-7-lg, .col-8-lg, .col-9-lg, .col-10-lg, .col-11-lg, .col-12-lg, .col-1-c, .col-2-c, .col-3-c, .col-4-c, .col-5-c, .col-6-c, .col-7-c, .col-8-c, .col-9-c, .col-10-c, .col-11-c, .col-12-c {
+.row, .col-1-contain, .col-2-contain, .col-3-contain, .col-4-contain, .col-5-contain, .col-6-contain, .col-7-contain, .col-8-contain, .col-9-contain, .col-10-contain, .col-11-contain, .col-12-contain, .col-1-xs, .col-2-xs, .col-3-xs, .col-4-xs, .col-5-xs, .col-6-xs, .col-7-xs, .col-8-xs, .col-9-xs, .col-10-xs, .col-11-xs, .col-12-xs, .col-1-sm, .col-2-sm, .col-3-sm, .col-4-sm, .col-5-sm, .col-6-sm, .col-7-sm, .col-8-sm, .col-9-sm, .col-10-sm, .col-11-sm, .col-12-sm, .col-1-md, .col-2-md, .col-3-md, .col-4-md, .col-5-md, .col-6-md, .col-7-md, .col-8-md, .col-9-md, .col-10-md, .col-11-md, .col-12-md, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col-1-lg, .col-2-lg, .col-3-lg, .col-4-lg, .col-5-lg, .col-6-lg, .col-7-lg, .col-8-lg, .col-9-lg, .col-10-lg, .col-11-lg, .col-12-lg, .col-1-c, .col-2-c, .col-3-c, .col-4-c, .col-5-c, .col-6-c, .col-7-c, .col-8-c, .col-9-c, .col-10-c, .col-11-c, .col-12-c {
   width: 100%;
   padding: 0 8px 16px 8px;
   float: left;
@@ -25,6 +25,56 @@
 .omega {
   padding-right: 0; }
 
+/* #region --- Contain Box wrappers --- */
+.col-1-contain {
+  width: 100%;
+  max-width: 91.66667px; }
+
+.col-2-contain {
+  width: 100%;
+  max-width: 183.33333px; }
+
+.col-3-contain {
+  width: 100%;
+  max-width: 275px; }
+
+.col-4-contain {
+  width: 100%;
+  max-width: 366.66667px; }
+
+.col-5-contain {
+  width: 100%;
+  max-width: 458.33333px; }
+
+.col-6-contain {
+  width: 100%;
+  max-width: 550px; }
+
+.col-7-contain {
+  width: 100%;
+  max-width: 641.66667px; }
+
+.col-8-contain {
+  width: 100%;
+  max-width: 733.33333px; }
+
+.col-9-contain {
+  width: 100%;
+  max-width: 825px; }
+
+.col-10-contain {
+  width: 100%;
+  max-width: 916.66667px; }
+
+.col-11-contain {
+  width: 100%;
+  max-width: 1008.33333px; }
+
+.col-12-contain {
+  width: 100%;
+  max-width: 1100px; }
+
+/* #endregion */
 /* #region --- Extra Small Auto Grid --- */
 .col-1-xs {
   width: 8.33333%; }

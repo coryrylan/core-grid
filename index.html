@@ -26,6 +26,7 @@
                     <a href="#DynamicLayouts">Dynamic Layouts</a>
                     <a href="#SecondaryControlGrid">Secondary Control</a>
                     <a href="#GridLayout">Grid Layout</a>
+                    <a href="#Contain">Containing</a>
                     <a href="#Utilities">Utilities</a>
                 </nav>
             </section>
@@ -248,6 +249,23 @@
 
                     <div class="col-8"><div class="grid-box">.col-8</div></div>
                     <div class="col-4"><div class="grid-box">.col-4</div></div>
+                </section>
+
+                <div class="col-12">
+                    <div id="Contain" class="link-handle"></div>
+                    <h2>Containing Classes (max-width)</h2>
+                    <p>
+                        Using containing classes you can contain elements width proportionally to the max width of the ".container" class. This allows columns to be created that 
+                        are flexible but do not scale with the view port. Example if we add a ".col-6-contain" the element max width will be half of the ".container" class width. (1100/2 = 550px).
+                        This can be usefull for setting a max width on objects such as forms.
+                    </p>
+                </div>
+                <section class="core-grid">
+                    <div class="col-8-contain"><div class="grid-box">.col-8-contain (max-width: 733.33333px)</div></div>
+                    <div class="clear-both"></div>
+                    <div class="col-6-contain"><div class="grid-box">.col-6-contain (max-width: 550px)</div></div>
+                    <div class="clear-both"></div>
+                    <div class="col-4-contain"><div class="grid-box">.col-4-contain (max-width: 366.66667px)</div></div>
                 </section>
                 <div class="col-12">
                     <div id="Utilities" class="link-handle"></div>

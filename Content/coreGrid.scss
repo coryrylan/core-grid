@@ -6,6 +6,7 @@
     Core Grid 1.2
 */
 
+$container-width: 1100px;
 $sm-break: 33.75em;
 $md-break: 45em;
 $lg-break: 60em;
@@ -22,6 +23,18 @@ $cols: 12;
 
 /* --- Column Set Up --- */
 .row,
+.col-1-contain,
+.col-2-contain,
+.col-3-contain,
+.col-4-contain,
+.col-5-contain,
+.col-6-contain,
+.col-7-contain,
+.col-8-contain,
+.col-9-contain,
+.col-10-contain,
+.col-11-contain,
+.col-12-contain,
 .col-1-xs,
 .col-2-xs,
 .col-3-xs,
@@ -108,6 +121,16 @@ $cols: 12;
 .omega {
     padding-right: 0;
 }
+
+/* #region --- Contain Box wrappers --- */
+$col-width: ($container-width / 12);
+@for $i from 1 through $cols {
+    .col-#{$i}-#{'contain'} {
+        width:100%;
+        max-width: ($col-width * $i);
+    }
+}
+/* #endregion */
 
 /* #region --- Extra Small Auto Grid --- */
 @for $i from 1 through $cols {
@@ -207,7 +230,7 @@ $cols: 12;
 
 .container {
     width: 100%;
-    max-width: 1100px;
+    max-width: $container-width;
     margin: 0 auto;
     padding: 0 2%;
 }
