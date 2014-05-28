@@ -1,185 +1,185 @@
-@import '_util';
+@import '../Src/_util';
 
 *, *:before, *:after {
-  /* Chrome 9-, Safari 5-, iOS 4.2-, Android 3-, Blackberry 7- */
-  -webkit-box-sizing: border-box; 
-
-  /* Firefox (desktop or Android) 28- */
-  -moz-box-sizing: border-box;
-
-  /* Firefox 29+, IE 8+, Chrome 10+, Safari 5.1+, Opera 9.5+, iOS 5+, Opera Mini Anything, Blackberry 10+, Android 4+ */
-  box-sizing: border-box;
+    /* Chrome 9-, Safari 5-, iOS 4.2-, Android 3-, Blackberry 7- */
+    -webkit-box-sizing: border-box;
+    /* Firefox (desktop or Android) 28- */
+    -moz-box-sizing: border-box;
+    /* Firefox 29+, IE 8+, Chrome 10+, Safari 5.1+, Opera 9.5+, iOS 5+, Opera Mini Anything, Blackberry 10+, Android 4+ */
+    box-sizing: border-box;
 }
 
 body {
-  font-size:16px;
-  font-family: 'Open Sans', Helvetica, Arial, "Lucida Grande", sans- serif;
-  overflow-x:hidden;
+    font-size: 16px;
+    font-family: 'Open Sans', Helvetica, Arial, "Lucida Grande", sans- serif;
+    background: #FAFAFA;
 }
 
 .clear-both {
-    clear:both;
+    clear: both;
 }
 
-h1,h2,h3 { 
+h1, h2, h3 {
     font-family: Helvetica, Arial, "Lucida Grande", sans- serif;
-	border-bottom:solid 1px #21C40B;
+    border-bottom: solid 1px #21C40B;
 }
 
 header {
-		width:100%;
-		background-color:#51AD38;
-		overflow:auto;
-		margin-bottom:2%;
+    width: 100%;
+    background-color: #2d2d2d;
+    overflow: auto;
+    margin-bottom: 2%;
 
-	h1 {
-		color:#FFF;
-		padding: 8px 0;
-		margin: 0;
-		border-bottom:0;
-	}
+    h1 {
+        color: #FFF;
+        padding: 8px 0;
+        margin: 0;
+        border-bottom: 0;
+    }
 }
 
 h2, h3, a {
-    margin:1% 0%;
-    color:#51AD38;
+    margin: 1% 0;
+    color: #51AD38;
 }
 
 nav {
-	a {
-		display:block;
-		padding:2%;
-	}
+    a {
+        display: block;
+        padding: 2%;
+    }
 }
 
 .link-handle {
-	clear:both;
+    clear: both;
 }
 
 .btn {
-	display: block;
-	text-align: center;
-	margin: 0 auto;
-	width: 300px;
-	border-radius: 4px;
-	background-color: #51AD38;
-	padding: 10px 2%;
-	font-size: 1.3em;
-	color: #FFF;
-	text-decoration: none;
-	
-	&:hover {
-		background-color:#5ABF3E;
-	}
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 300px;
+    border-radius: 4px;
+    background-color: #51AD38;
+    padding: 10px 2%;
+    font-size: 1.3em;
+    color: #FFF;
+    text-decoration: none;
+
+    &:hover {
+        background-color: #5ABF3E;
+    }
 }
 
 main {
-	overflow:auto;
+    overflow: auto;
 }
 
 footer {
-    clear:both;
-    width:100%;
-    padding:3% 0%;
-    text-align:center;
-	background:#2d2d2d;
+    clear: both;
+    width: 100%;
+    padding: 3% 0%;
+    text-align: center;
+    background: #2d2d2d;
 
-	a {
-        text-decoration:none;
-        font-size:1.3em;
+    a {
+        text-decoration: none;
+        font-size: 1.3em;
 
-		&:hover {
-            text-decoration:underline;
+        &:hover {
+            text-decoration: underline;
         }
     }
 }
 
 hr {
-	height:0;
-	border-bottom:1px solid #51AD38;
-	width:100%;
+    height: 0;
+    border-bottom: 1px solid #51AD38;
+    width: 100%;
 }
 
 ul {
-	pre {
-		font-family: 'Open Sans', Helvetica, Arial, "Lucida Grande", sans- serif;
-	}
+    pre {
+        font-family: 'Open Sans', Helvetica, Arial, "Lucida Grande", sans- serif;
+    }
 }
 
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
-	border: 1px solid #2d2d2d;
-	width: 100%;
-	background:#FFF;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #2d2d2d;
+    width: 100%;
+    background: #FFF;
 }
 
 td, th {
-  border: 1px solid #2d2d2d;
-  padding: 0.5em;
-  text-align: left;
-  font-size:0.9em;
+    border: 1px solid #2d2d2d;
+    padding: 0.5em;
+    text-align: left;
+    font-size: 0.9em;
 }
 
 tr:nth-child(even) {
-	background: #E5E5E5;
+    background: #E5E5E5;
 }
 
 tr:nth-child(odd) {
-	background:#FFF;
+    background: #FFF;
 }
 
 .visible-table {
-	tr:nth-child(odd), tr:nth-child(even) {
-		background:#FFF;
-	}
+    tr:nth-child(odd), tr:nth-child(even) {
+        background: #FFF;
+    }
 
-	.highlight {
-		background:#51AD38;
-		color:#FFF;
-	}
+    .highlight {
+        background: #51AD38;
+        color: #FFF;
+    }
 }
 
 thead, thead th {
-	background:#51AD38;
-	color:#FFF;
+    background: #51AD38;
+    color: #FFF;
 }
 
 @include respond-max(40em) {
-	table {
-		tr, th, td {
-			display:block;
-			width:100%;
-			border:none;
-			border-top:1px solid #2d2d2d;
-			background:#FFF;
-		}
+    table {
+        tr, th, td {
+            display: block;
+            width: 100%;
+            border: none;
+            border-top: 1px solid #2d2d2d;
+            background: #FFF;
+        }
 
-		tr {
-			overflow:hidden;
-		}
+        tr {
+            overflow: hidden;
+        }
 
-		thead, tfoot {
-			display:none;
-		}
+        thead, tfoot {
+            display: none;
+        }
 
-		td:nth-child(even) {
-			background: #E5E5E5;
-		}
+        td:nth-child(even) {
+            background: #E5E5E5;
+        }
 
-		td:nth-child(odd) {
-			background:#FFF;
-		}
-	}
+        td:nth-child(odd) {
+            background: #FFF;
+        }
+    }
 }
 
-code pre {
-  display: block;
-  width: auto;
-  overflow: auto;
-  white-space: pre;
-  word-wrap: normal;
-  color:#51AD38; 
+/* --- Simple Box --- */
+.box {
+    background: #eeeeee;
+    color: #2d2d2d;
+    padding: 2%;
+    width: 100%;
+    margin: 2% 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
 }
 
 /* Core Grid */
@@ -189,8 +189,8 @@ code pre {
 }
 
 .grid-box {
-	padding: 15px 0;
-	background: #CCC;
+    padding: 15px 0;
+    background: #CCC;
 }
 
 @include respond-min(33em) {
@@ -200,19 +200,20 @@ code pre {
 }
 
 @include respond-min(45em) {
-	nav, header {
-		position:fixed;
-	}
+    nav, header {
+        position: fixed;
+        top:0;
+    }
 
-	nav {
-		width: 200px;
-	}
+    nav {
+        width: 200px;
+    }
 
-	.header-buff {
-		margin-top:80px;
-	}
+    main.container {
+        margin-top: 50px;
+    }
 
-	.link-handle {
-		margin-bottom:50px;
-	}
+    .link-handle {
+        margin-bottom: 50px;
+    }
 }

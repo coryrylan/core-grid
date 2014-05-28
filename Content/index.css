@@ -9,7 +9,7 @@
 body {
   font-size: 16px;
   font-family: 'Open Sans', Helvetica, Arial, "Lucida Grande", sans- serif;
-  overflow-x: hidden; }
+  background: #FAFAFA; }
 
 .clear-both {
   clear: both; }
@@ -20,7 +20,7 @@ h1, h2, h3 {
 
 header {
   width: 100%;
-  background-color: #51AD38;
+  background-color: #2d2d2d;
   overflow: auto;
   margin-bottom: 2%; }
   header h1 {
@@ -30,7 +30,7 @@ header {
     border-bottom: 0; }
 
 h2, h3, a {
-  margin: 1% 0%;
+  margin: 1% 0;
   color: #51AD38; }
 
 nav a {
@@ -122,13 +122,15 @@ thead, thead th {
   table td:nth-child(odd) {
     background: #FFF; } }
 
-code pre {
-  display: block;
-  width: auto;
-  overflow: auto;
-  white-space: pre;
-  word-wrap: normal;
-  color: #51AD38; }
+/* --- Simple Box --- */
+.box {
+  background: #eeeeee;
+  color: #2d2d2d;
+  padding: 2%;
+  width: 100%;
+  margin: 2% 0;
+  overflow: hidden;
+  border: 1px solid #ccc; }
 
 /* Core Grid */
 .core-grid, .page-class {
@@ -145,11 +147,12 @@ code pre {
 
 @media screen and (min-width: 45em) {
   nav, header {
-    position: fixed; }
+    position: fixed;
+    top: 0; }
   nav {
     width: 200px; }
-  .header-buff {
-    margin-top: 80px; }
+  main.container {
+    margin-top: 50px; }
   .link-handle {
     margin-bottom: 50px; } }
 

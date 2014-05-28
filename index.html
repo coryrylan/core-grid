@@ -4,189 +4,173 @@
     <title>Core Grid</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link href="Content/normalize.css" rel="stylesheet" />
+    
     <!--[if gt IE 8]><!-->
-    <link href="Content/coreGrid.css" rel="stylesheet" />
+    <link href="Src/coreGrid.css" rel="stylesheet" />
     <!--<![endif]-->
     <!--[if lte IE 8]>
-        <link href="Content/oldIE.min.css" rel="stylesheet" />
+        <link href="Src/oldIE.min.css" rel="stylesheet" />
     <![endif]-->
-    <link href="Content/index.css" rel="stylesheet" />
+    <link href="Content/baseBundle.min.css" rel="stylesheet" />
 </head>
 <body id="CoreGridSystem">
     <header>
         <div class="container"><h1>Core Grid</h1></div>
     </header>
     <main class="container index-page">
-        <div class="header-buff">
+        <section class="box">
             <div class="row">
-                <div class="col-3-md">
-                    <nav>
-                        <a href="#CoreGridSystem">Core Grid System</a>
-                        <a href="#PrimaryDefaultGrid">Primary Default</a>
-                        <a href="#DynamicLayouts">Dynamic Layouts</a>
-                        <a href="#SecondaryControlGrid">Secondary Control</a>
-                        <a href="#GridLayout">Grid Layout</a>
-                        <a href="#Contain">Containing</a>
-                        <a href="#Utilities">Utilities</a>
-                    </nav>
+                <div class="col-12">
+                    <h2>Core Grid System (v1.5.0)</h2>
+                    <p>
+                        Core Grid is a dynamic mobile first Sass/CSS grid. The grid is designed to have default break points for the majority
+                        of content layouts and a secondary semantic grid for fined tuned control over layouts.
+                    </p><br />
+                    <a href="https://github.com/splintercode/CoreGrid" class="btn">Download on GitHub</a>
                 </div>
-                <div class="col-9-md">
-                    <h2>Core Grid System</h2><hr />
-                    <section class="box">
-                        <p>
-                            Core Grid is a dynamic mobile first Sass/CSS grid. The grid is designed to have default break points for the majority
-                            of content layouts and a secondary semantic grid for fined tuned control over layouts.
-                        </p>
-                        <a href="https://github.com/splintercode/CoreGrid" class="btn">Download on GitHub</a>
-                        <br /><br />
-                        <div id="PrimaryDefaultGrid" class="link-handle"></div>
-                        <div class="row">
-                            <div class="col-12">
-                                <h2>Primary Default Grid</h2>
-                                <p>
-                                    The first primary default is optimized for single
-                                    column layout. All columns start at a width of 100%. Use the specified class name to trigger columns at the corresponding container width.
-                                    <br /><br />
-                                    The class structure is the following <strong>(.column-width-breakpoint)</strong><br /><br />
-                                    Example ".col-6-md"<br />
-                                    <ul>
-                                        <li>".col" defines that you want a column.</li>
-                                        <li>"-6" defines how many columns you want the column to span.</li>
-                                        <li>"-md" defines the default breakpoint you would like your column width to be triggered at.</li>
-                                    </ul>
-                                </p>
-                            </div>
-                        </div><br />
-                        <div class="row">
-                            <div class="col-12">
-                                <table class="table-default">
-                                    <thead>
-                                        <tr>
-                                            <th></th>
-                                            <th>
-                                                Extra Small devices
-                                                <small>Phones</small>
-                                            </th>
-                                            <th>
-                                                Small devices
-                                                <small>Phones/Tablets (≥540px)</small>
-                                            </th>
-                                            <th>
-                                                Medium devices
-                                                <small>Tablets/Laptops (≥720px)</small>
-                                            </th>
-                                            <th>
-                                                Large devices
-                                                <small>Laptop/Desktop (≥960px)</small>
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th>Behavior</th>
-                                            <td>Always horizontal</td>
-                                            <td colspan="3">Width 100% to start, horizontal at above breakpoints</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Container width</th>
-                                            <td>Auto</td>
-                                            <td>540px</td>
-                                            <td>720px</td>
-                                            <td>960px</td>
-                                        </tr>
-                                        <tr>
-                                            <th>CSS Class</th>
-                                            <td><code>.col-1-xs</code></td>
-                                            <td><code>.col-1-sm</code></td>
-                                            <td><code>.col-1-md (or) .col-1</code></td>
-                                            <td><code>.col-1-lg</code></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Nestable</th>
-                                            <td colspan="4">Yes</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Columns</th>
-                                            <td colspan="4">12</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Column width</th>
-                                            <td colspan="4">8.333% at specified breakpoint</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Gutter width</th>
-                                            <td colspan="4">8px width, right and left of column. 16px bottom</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        <div class="clear-both"></div>
-                        <br /><hr /><br />
-                        <section class="core-grid">
-                            <div class="code" data-xrayhtml>
-                                <div class="row">
-                                    <div class="col-6-sm"><div class="grid-box">.col-6-sm</div></div>
-                                    <div class="col-6-sm"><div class="grid-box">.col-6-sm</div></div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-4-md"><div class="grid-box">.col-4-md</div></div>
-                                    <div class="col-4-md"><div class="grid-box">.col-4-md</div></div>
-                                    <div class="col-4-md"><div class="grid-box">.col-4-md</div></div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-3-lg"><div class="grid-box">.col-3-lg</div></div>
-                                    <div class="col-3-lg"><div class="grid-box">.col-3-lg</div></div>
-                                    <div class="col-3-lg"><div class="grid-box">.col-3-lg</div></div>
-                                    <div class="col-3-lg"><div class="grid-box">.col-3-lg</div></div>
-                                </div>
-                            </div>
-                        </section>
-                        <br /><hr /><br />
-                        <div id="DynamicLayouts" class="link-handle"></div>
-                        <div class="row">
-                            <div class="col-12">
-                                <h2>Dynamic Layouts</h2>
-                                <p>
-                                    Core Grid allows dynamic changing of column sizes. Example below we have four containers.
-                                    By default they are 100% in width. At our "-sm" breakpoint they will span the width of 6 columns.
-                                    The second class "-lg" defines our second change that will occur at the large breakpoint.
-                                    This will trigger the columns to span 3 columns wide.
-                                </p>
-                            </div>
-                        </div>
-                        <section class="core-grid">
-                            <div class="code" data-xrayhtml>
-                                <div class="row">
-                                    <div class="col-6-sm col-3-lg"><div class="grid-box">.col-6-sm .col-3-lg</div></div>
-                                    <div class="col-6-sm col-3-lg"><div class="grid-box">.col-6-sm .col-3-lg</div></div>
-                                    <div class="col-6-sm col-3-lg"><div class="grid-box">.col-6-sm .col-3-lg</div></div>
-                                    <div class="col-6-sm col-3-lg"><div class="grid-box">.col-6-sm .col-3-lg</div></div>
-                                </div>
-                            </div>
-                        </section>
-
-                        <br /><hr /><br />
-                        <div id="SecondaryControlGrid" class="link-handle"></div>
-                        <div class="row">
-                            <div class="col-12">
-                                <h2>Secondary Control Grid</h2>
-                                <p>
-                                    A secondary grid is for the fined tuned control over your breakpoints. All .col start at 100% mobile first.
-                                    To enable cols at certain width use media queries. Secondary grid follows the naming convention col-1-c
-                                    (-c for custom denotation).
-                                </p>
-                            </div>
-                        </div>
-                        <section class="page-class">
-                            <div class="row">
-                                <div class="col-6-c"><div class="grid-box">.col-6-c</div></div>
-                                <div class="col-6-c"><div class="grid-box">.col-6-c</div></div>
-                            </div>
-                        </section>
-                        <pre class="language-markup">
-                        <code class="language-markup">
+            </div>
+        </section>
+        <section class="box">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Primary Default Grid</h2>
+                    <p>
+                        The first primary default is optimized for single
+                        column mobile first layout. All columns start at a width of 100%. Use the specified class name to trigger columns at the corresponding container width.
+                        The class structure is the following <strong>(.column-width-breakpoint)</strong><br /><br />
+                        Example ".col-6-md"<br />
+                        <ul>
+                            <li>".col" defines that you want a column.</li>
+                            <li>"-6" defines how many columns you want the column to span.</li>
+                            <li>"-md" defines the default breakpoint you would like your column width to be triggered at.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div><br />
+            <div class="row">
+                <div class="col-12">
+                    <table class="table-default">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>
+                                    Extra Small devices
+                                    <small>Phones</small>
+                                </th>
+                                <th>
+                                    Small devices
+                                    <small>Phones/Tablets (≥540px)</small>
+                                </th>
+                                <th>
+                                    Medium devices
+                                    <small>Tablets/Laptops (≥720px)</small>
+                                </th>
+                                <th>
+                                    Large devices
+                                    <small>Laptop/Desktop (≥960px)</small>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Behavior</th>
+                                <td>Always horizontal</td>
+                                <td colspan="3">Width 100% to start, horizontal at above breakpoints</td>
+                            </tr>
+                            <tr>
+                                <th>Container width</th>
+                                <td>Auto</td>
+                                <td>540px</td>
+                                <td>720px</td>
+                                <td>960px</td>
+                            </tr>
+                            <tr>
+                                <th>CSS Class</th>
+                                <td><code>.col-1-xs</code></td>
+                                <td><code>.col-1-sm</code></td>
+                                <td><code>.col-1-md (or) .col-1</code></td>
+                                <td><code>.col-1-lg</code></td>
+                            </tr>
+                            <tr>
+                                <th>Nestable</th>
+                                <td colspan="4">Yes</td>
+                            </tr>
+                            <tr>
+                                <th>Columns</th>
+                                <td colspan="4">12</td>
+                            </tr>
+                            <tr>
+                                <th>Column width</th>
+                                <td colspan="4">8.333% at specified breakpoint</td>
+                            </tr>
+                            <tr>
+                                <th>Gutter width</th>
+                                <td colspan="4">8px width, right and left of column. 16px bottom</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="clear-both"></div>
+            <br /><hr /><br />
+            <div class="code core-grid" data-xrayhtml>
+                <div class="row">
+                    <div class="col-6-sm"><div class="grid-box">.col-6-sm</div></div>
+                    <div class="col-6-sm"><div class="grid-box">.col-6-sm</div></div>
+                </div>
+                <div class="row">
+                    <div class="col-4-md"><div class="grid-box">.col-4-md</div></div>
+                    <div class="col-4-md"><div class="grid-box">.col-4-md</div></div>
+                    <div class="col-4-md"><div class="grid-box">.col-4-md</div></div>
+                </div>
+                <div class="row">
+                    <div class="col-3-lg"><div class="grid-box">.col-3-lg</div></div>
+                    <div class="col-3-lg"><div class="grid-box">.col-3-lg</div></div>
+                    <div class="col-3-lg"><div class="grid-box">.col-3-lg</div></div>
+                    <div class="col-3-lg"><div class="grid-box">.col-3-lg</div></div>
+                </div>
+            </div>
+        </section>
+        <section class="box">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Dynamic Layouts</h2>
+                    <p>
+                        Core Grid allows dynamic changing of column sizes. Example below we have four containers.
+                        By default they are 100% in width. At our "-sm" breakpoint they will span the width of 6 columns.
+                        The second class "-lg" defines our second change that will occur at the large breakpoint.
+                        This will trigger the columns to span 3 columns wide.
+                    </p>
+                </div>
+            </div>
+            <div class="code core-grid" data-xrayhtml>
+                <div class="row">
+                    <div class="col-6-sm col-3-lg"><div class="grid-box">.col-6-sm .col-3-lg</div></div>
+                    <div class="col-6-sm col-3-lg"><div class="grid-box">.col-6-sm .col-3-lg</div></div>
+                    <div class="col-6-sm col-3-lg"><div class="grid-box">.col-6-sm .col-3-lg</div></div>
+                    <div class="col-6-sm col-3-lg"><div class="grid-box">.col-6-sm .col-3-lg</div></div>
+                </div>
+            </div>
+        </section>
+        <section class="box">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Secondary Control Grid</h2>
+                    <p>
+                        A secondary grid is for the fined tuned control over your breakpoints. All .col start at 100% mobile first.
+                        To enable cols at certain width use media queries. Secondary grid follows the naming convention col-1-c
+                        (-c for custom denotation).
+                    </p>
+                </div>
+            </div>
+            <section class="page-class">
+                <div class="row">
+                    <div class="col-6-c"><div class="grid-box">.col-6-c</div></div>
+                    <div class="col-6-c"><div class="grid-box">.col-6-c</div></div>
+                </div>
+            </section>
+            <pre class="language-markup">
+            <code class="language-markup">
 &lt;section class=&quot;page-class&quot;&gt; 
     &lt;div class=&quot;row&quot;&gt; 
         &lt;div class=&quot;col-6-c&quot;&gt;&lt;/div&gt; 
@@ -194,7 +178,7 @@
     &lt;/div&gt;
 &lt;/section&gt;
 &lt;style&gt;
-@@media all and (min-width: 33em)
+@media all and (min-width: 33em)
     .page-class {
         .col-6-c {
             width:50%;
@@ -204,207 +188,205 @@
 &lt;/style&gt;
         </code>
     </pre>
-                        <br /><hr /><br />
-                        <div id="GridLayout" class="link-handle"></div>
-                        <h2>Grid Layout</h2>
-                        <section class="core-grid">
-                            <div class="row">
-                                <div class="col-1"><div class="grid-box">.col-1</div></div>
-                                <div class="col-1"><div class="grid-box">.col-1</div></div>
-                                <div class="col-1"><div class="grid-box">.col-1</div></div>
-                                <div class="col-1"><div class="grid-box">.col-1</div></div>
-                                <div class="col-1"><div class="grid-box">.col-1</div></div>
-                                <div class="col-1"><div class="grid-box">.col-1</div></div>
-                                <div class="col-1"><div class="grid-box">.col-1</div></div>
-                                <div class="col-1"><div class="grid-box">.col-1</div></div>
-                                <div class="col-1"><div class="grid-box">.col-1</div></div>
-                                <div class="col-1"><div class="grid-box">.col-1</div></div>
-                                <div class="col-1"><div class="grid-box">.col-1</div></div>
-                                <div class="col-1"><div class="grid-box">.col-1</div></div>
-                            </div>
-                            <div class="row">
-                                <div class="col-2"><div class="grid-box">.col-2</div></div>
-                                <div class="col-2"><div class="grid-box">.col-2</div></div>
-                                <div class="col-2"><div class="grid-box">.col-2</div></div>
-                                <div class="col-2"><div class="grid-box">.col-2</div></div>
-                                <div class="col-2"><div class="grid-box">.col-2</div></div>
-                                <div class="col-2"><div class="grid-box">.col-2</div></div>
-                            </div>
-                            <div class="row">
-                                <div class="col-3"><div class="grid-box">.col-3</div></div>
-                                <div class="col-3"><div class="grid-box">.col-3</div></div>
-                                <div class="col-3"><div class="grid-box">.col-3</div></div>
-                                <div class="col-3"><div class="grid-box">.col-3</div></div>
-                            </div>
-                            <div class="row">
-                                <div class="col-4"><div class="grid-box">.col-4</div></div>
-                                <div class="col-4"><div class="grid-box">.col-4</div></div>
-                                <div class="col-4"><div class="grid-box">.col-4</div></div>
-                            </div>
-                            <div class="row">
-                                <div class="col-6"><div class="grid-box">.col-6</div></div>
-                                <div class="col-6"><div class="grid-box">.col-6</div></div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12"><div class="grid-box">.col-12</div></div>
-                            </div>
-                            <div class="row">
-                                <div class="col-5"><div class="grid-box">.col-5</div></div>
-                                <div class="col-7"><div class="grid-box">.col-7</div></div>
-                            </div>
-                            <div class="row">
-                                <div class="col-8"><div class="grid-box">.col-8</div></div>
-                                <div class="col-4"><div class="grid-box">.col-4</div></div>
-                            </div>
-                        </section>
-                        <br /><hr /><br />
-                        <div class="row">
-                            <div class="col-12">
-                                <div id="Contain" class="link-handle"></div>
-                                <h2>Containing Classes (max-width)</h2>
-                                <p>
-                                    Using containing classes you can contain elements width proportionally to the max width of the ".container" class. This allows columns to be created that
-                                    are flexible but do not scale with the view port. Example if we add a ".col-6-contain" the element max width will be half of the ".container" class width. (1100/2 = 550px).
-                                    This can be usefull for setting a max width on objects such as forms.
-                                </p>
-                            </div>
-                        </div>
-                        <section class="core-grid row">
-                            <div class="col-8-contain"><div class="grid-box">.col-8-contain (max-width: 733.33333px)</div></div>
-                            <div class="clear-both"></div>
-                            <div class="col-6-contain"><div class="grid-box">.col-6-contain (max-width: 550px)</div></div>
-                            <div class="clear-both"></div>
-                            <div class="col-4-contain"><div class="grid-box">.col-4-contain (max-width: 366.66667px)</div></div>
-                        </section>
-                        <br /><hr /><br />
-                        <div class="row">
-                            <div class="col-12">
-                                <div id="Utilities" class="link-handle"></div>
-                                <h2>Utilities</h2>
-                                <p>
-                                    By leveraging Sass we can have a true mobile first responsive grid and still support older IE versions.
-                                    Using special Sass mixins we can create a seperate old IE style sheet for a fixed grid
-                                    for our media queries to support ie8 and below. To read more on this please read Jake Archibalds great blog post
-                                    <a href="http://jakearchibald.github.io/sass-ie/" target="_blank">here</a>.
-                                </p>
-
-                                <p>Core Grid contains multiple helper classes to show and hide content to the corresponding grid breakpoints.</p>
-                                <table class="table-default visible-table">
-                                    <thead>
-                                        <tr>
-                                            <th></th>
-                                            <th>
-                                                Extra Small devices
-                                                <small>Phones</small>
-                                            </th>
-                                            <th>
-                                                Small devices
-                                                <small>Phones/Tablets (≥540px)</small>
-                                            </th>
-                                            <th>
-                                                Medium devices
-                                                <small>Tablets/Laptops (≥720px)</small>
-                                            </th>
-                                            <th>
-                                                Large devices
-                                                <small>Laptop/Desktop (≥960px)</small>
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th>Container width</th>
-                                            <td>auto</td>
-                                            <td>540px</td>
-                                            <td>720px</td>
-                                            <td>960px</td>
-                                        </tr>
-                                        <tr>
-                                            <th>.visible</th>
-                                            <td class="highlight">Visible</td>
-                                            <td class="highlight">Visible</td>
-                                            <td class="highlight">Visible</td>
-                                            <td class="highlight">Visible</td>
-                                        </tr>
-                                        <tr>
-                                            <th>.hidden</th>
-                                            <td>Hidden</td>
-                                            <td>Hidden</td>
-                                            <td>Hidden</td>
-                                            <td>Hidden</td>
-                                        </tr>
-                                        <tr>
-                                            <th>.visible-xs</th>
-                                            <td class="highlight">Visible</td>
-                                            <td class="highlight">Visible</td>
-                                            <td class="highlight">Visible</td>
-                                            <td class="highlight">Visible</td>
-                                        </tr>
-                                        <tr>
-                                            <th>.visible-sm</th>
-                                            <td>Hidden</td>
-                                            <td class="highlight">Visible</td>
-                                            <td class="highlight">Visible</td>
-                                            <td class="highlight">Visible</td>
-                                        </tr>
-                                        <tr>
-                                            <th>.visible-md</th>
-                                            <td>Hidden</td>
-                                            <td>Hidden</td>
-                                            <td class="highlight">Visible</td>
-                                            <td class="highlight">Visible</td>
-                                        </tr>
-                                        <tr>
-                                            <th>.visible-lg</th>
-                                            <td>Hidden</td>
-                                            <td>Hidden</td>
-                                            <td>Hidden</td>
-                                            <td class="highlight">Visible</td>
-                                        </tr>
-                                        <tr>
-                                            <th>.hidden-xs</th>
-                                            <td>Hidden</td>
-                                            <td>Hidden</td>
-                                            <td>Hidden</td>
-                                            <td>Hidden</td>
-                                        </tr>
-                                        <tr>
-                                            <th>.hidden-sm</th>
-                                            <td class="highlight">Visible</td>
-                                            <td>Hidden</td>
-                                            <td>Hidden</td>
-                                            <td>Hidden</td>
-                                        </tr>
-                                        <tr>
-                                            <th>.hidden-md</th>
-                                            <td class="highlight">Visible</td>
-                                            <td class="highlight">Visible</td>
-                                            <td>Hidden</td>
-                                            <td>Hidden</td>
-                                        </tr>
-                                        <tr>
-                                            <th>.hidden-lg</th>
-                                            <td class="highlight">Visible</td>
-                                            <td class="highlight">Visible</td>
-                                            <td class="highlight">Visible</td>
-                                            <td>Hidden</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </section>
-                    <script>
-    xray();
-    Prism.highlightAll();
-                    </script>
+        </section>
+        <section class="box">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Grid Layout</h2>
                 </div>
             </div>
-        </div>
+            <section class="core-grid">
+                <div class="row">
+                    <div class="col-1"><div class="grid-box">.col-1</div></div>
+                    <div class="col-1"><div class="grid-box">.col-1</div></div>
+                    <div class="col-1"><div class="grid-box">.col-1</div></div>
+                    <div class="col-1"><div class="grid-box">.col-1</div></div>
+                    <div class="col-1"><div class="grid-box">.col-1</div></div>
+                    <div class="col-1"><div class="grid-box">.col-1</div></div>
+                    <div class="col-1"><div class="grid-box">.col-1</div></div>
+                    <div class="col-1"><div class="grid-box">.col-1</div></div>
+                    <div class="col-1"><div class="grid-box">.col-1</div></div>
+                    <div class="col-1"><div class="grid-box">.col-1</div></div>
+                    <div class="col-1"><div class="grid-box">.col-1</div></div>
+                    <div class="col-1"><div class="grid-box">.col-1</div></div>
+                </div>
+                <div class="row">
+                    <div class="col-2"><div class="grid-box">.col-2</div></div>
+                    <div class="col-2"><div class="grid-box">.col-2</div></div>
+                    <div class="col-2"><div class="grid-box">.col-2</div></div>
+                    <div class="col-2"><div class="grid-box">.col-2</div></div>
+                    <div class="col-2"><div class="grid-box">.col-2</div></div>
+                    <div class="col-2"><div class="grid-box">.col-2</div></div>
+                </div>
+                <div class="row">
+                    <div class="col-3"><div class="grid-box">.col-3</div></div>
+                    <div class="col-3"><div class="grid-box">.col-3</div></div>
+                    <div class="col-3"><div class="grid-box">.col-3</div></div>
+                    <div class="col-3"><div class="grid-box">.col-3</div></div>
+                </div>
+                <div class="row">
+                    <div class="col-4"><div class="grid-box">.col-4</div></div>
+                    <div class="col-4"><div class="grid-box">.col-4</div></div>
+                    <div class="col-4"><div class="grid-box">.col-4</div></div>
+                </div>
+                <div class="row">
+                    <div class="col-6"><div class="grid-box">.col-6</div></div>
+                    <div class="col-6"><div class="grid-box">.col-6</div></div>
+                </div>
+                <div class="row">
+                    <div class="col-12"><div class="grid-box">.col-12</div></div>
+                </div>
+                <div class="row">
+                    <div class="col-5"><div class="grid-box">.col-5</div></div>
+                    <div class="col-7"><div class="grid-box">.col-7</div></div>
+                </div>
+                <div class="row">
+                    <div class="col-8"><div class="grid-box">.col-8</div></div>
+                    <div class="col-4"><div class="grid-box">.col-4</div></div>
+                </div>
+            </section>
+        </section>
+        <section class="box">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Containing Classes (max-width)</h2>
+                    <p>
+                        Using containing classes you can contain elements width proportionally to the max width of the ".container" class. This allows columns to be created that
+                        are flexible but do not scale with the view port. Example if we add a ".col-6-contain" the element max width will be half of the ".container" class width. (1100/2 = 550px).
+                        This can be usefull for setting a max width on objects such as forms.
+                    </p>
+                </div>
+            </div>
+            <section class="core-grid row">
+                <div class="col-8-contain"><div class="grid-box">.col-8-contain (max-width: 733.33333px)</div></div>
+                <div class="clear-both"></div>
+                <div class="col-6-contain"><div class="grid-box">.col-6-contain (max-width: 550px)</div></div>
+                <div class="clear-both"></div>
+                <div class="col-4-contain"><div class="grid-box">.col-4-contain (max-width: 366.66667px)</div></div>
+            </section>
+        </section>
+        <section class="box">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Utilities</h2>
+                    <p>
+                        By leveraging Sass we can have a true mobile first responsive grid and still support older IE versions.
+                        Using special Sass mixins we can create a seperate old IE style sheet for a fixed grid
+                        for our media queries to support ie8 and below. To read more on this please read Jake Archibalds great blog post
+                        <a href="http://jakearchibald.github.io/sass-ie/" target="_blank">here</a>.
+                    </p>
+
+                    <p>Core Grid contains multiple helper classes to show and hide content to the corresponding grid breakpoints.</p>
+                    <table class="table-default visible-table">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>
+                                    Extra Small devices
+                                    <small>Phones</small>
+                                </th>
+                                <th>
+                                    Small devices
+                                    <small>Phones/Tablets (≥540px)</small>
+                                </th>
+                                <th>
+                                    Medium devices
+                                    <small>Tablets/Laptops (≥720px)</small>
+                                </th>
+                                <th>
+                                    Large devices
+                                    <small>Laptop/Desktop (≥960px)</small>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Container width</th>
+                                <td>auto</td>
+                                <td>540px</td>
+                                <td>720px</td>
+                                <td>960px</td>
+                            </tr>
+                            <tr>
+                                <th>.visible</th>
+                                <td class="highlight">Visible</td>
+                                <td class="highlight">Visible</td>
+                                <td class="highlight">Visible</td>
+                                <td class="highlight">Visible</td>
+                            </tr>
+                            <tr>
+                                <th>.hidden</th>
+                                <td>Hidden</td>
+                                <td>Hidden</td>
+                                <td>Hidden</td>
+                                <td>Hidden</td>
+                            </tr>
+                            <tr>
+                                <th>.visible-xs</th>
+                                <td class="highlight">Visible</td>
+                                <td class="highlight">Visible</td>
+                                <td class="highlight">Visible</td>
+                                <td class="highlight">Visible</td>
+                            </tr>
+                            <tr>
+                                <th>.visible-sm</th>
+                                <td>Hidden</td>
+                                <td class="highlight">Visible</td>
+                                <td class="highlight">Visible</td>
+                                <td class="highlight">Visible</td>
+                            </tr>
+                            <tr>
+                                <th>.visible-md</th>
+                                <td>Hidden</td>
+                                <td>Hidden</td>
+                                <td class="highlight">Visible</td>
+                                <td class="highlight">Visible</td>
+                            </tr>
+                            <tr>
+                                <th>.visible-lg</th>
+                                <td>Hidden</td>
+                                <td>Hidden</td>
+                                <td>Hidden</td>
+                                <td class="highlight">Visible</td>
+                            </tr>
+                            <tr>
+                                <th>.hidden-xs</th>
+                                <td>Hidden</td>
+                                <td>Hidden</td>
+                                <td>Hidden</td>
+                                <td>Hidden</td>
+                            </tr>
+                            <tr>
+                                <th>.hidden-sm</th>
+                                <td class="highlight">Visible</td>
+                                <td>Hidden</td>
+                                <td>Hidden</td>
+                                <td>Hidden</td>
+                            </tr>
+                            <tr>
+                                <th>.hidden-md</th>
+                                <td class="highlight">Visible</td>
+                                <td class="highlight">Visible</td>
+                                <td>Hidden</td>
+                                <td>Hidden</td>
+                            </tr>
+                            <tr>
+                                <th>.hidden-lg</th>
+                                <td class="highlight">Visible</td>
+                                <td class="highlight">Visible</td>
+                                <td class="highlight">Visible</td>
+                                <td>Hidden</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <a href="http://www.corycode.me" target="_blank">Cory Bateman www.corycode.me</a><br /><br />
         <a href="https://github.com/splintercode/CoreGrid">Contribute on GitHub</a>
     </footer>
+    <script src="Content/baseBundle.min.js"></script>
 </body>
 </html>
