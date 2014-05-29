@@ -137,8 +137,9 @@ thead, thead th {
   text-align: center;
   font-size: 1.1em; }
 
-.grid-box {
+.core-grid p {
   padding: 15px 0;
+  margin: 0;
   background: #CCC; }
 
 @media screen and (min-width: 33em) {
