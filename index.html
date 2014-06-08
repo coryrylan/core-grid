@@ -18,9 +18,9 @@
         <div class="container"><h1>Core Grid</h1></div>
     </header>
     <main class="container index-page">
-        <section class="box">
-            <div class="row">
-                <div class="col-12">
+        <div class="row">
+            <div class="col-12-md">
+                <div class="box">
                     <h2>Core Grid System (v1.5.1)</h2>
                     <p>
                         Core Grid is a dynamic mobile first Sass/CSS grid. The grid is designed to have default break points for the majority
@@ -29,10 +29,11 @@
                     <a href="https://github.com/splintercode/CoreGrid" class="btn">Download on GitHub</a>
                 </div>
             </div>
-        </section>
-        <section class="box">
-            <div class="row">
-                <div class="col-12">
+        </div>
+        <div class="row">
+            <div class="col-12-md">
+                <div class="box">
+
                     <h2>Primary Default Grid</h2>
                     <p>
                         The first primary default is optimized for single
@@ -45,11 +46,8 @@
                             <li>"-md" defines the default breakpoint you would like your column width to be triggered at.</li>
                         </ul>
                     </p>
-                </div>
-            </div><br />
-            <div class="row">
-                <div class="col-12">
-                    <table class="table-default">
+
+                    <table class="table">
                         <thead>
                             <tr>
                                 <th></th>
@@ -109,31 +107,31 @@
                             </tr>
                         </tbody>
                     </table>
+                    <div class="clear-both"></div>
+                    <br /><hr /><br />
+                    <div class="code core-grid" data-xrayhtml>
+                        <div class="row">
+                            <div class="col-6-sm"><p>.col-6-sm</p></div>
+                            <div class="col-6-sm"><p>.col-6-sm</p></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4-md"><p>.col-4-md</p></div>
+                            <div class="col-4-md"><p>.col-4-md</p></div>
+                            <div class="col-4-md"><p>.col-4-md</p></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3-lg"><p>.col-3-lg</p></div>
+                            <div class="col-3-lg"><p>.col-3-lg</p></div>
+                            <div class="col-3-lg"><p>.col-3-lg</p></div>
+                            <div class="col-3-lg"><p>.col-3-lg</p></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="clear-both"></div>
-            <br /><hr /><br />
-            <div class="code core-grid" data-xrayhtml>
-                <div class="row">
-                    <div class="col-6-sm"><p>.col-6-sm</p></div>
-                    <div class="col-6-sm"><p>.col-6-sm</p></div>
-                </div>
-                <div class="row">
-                    <div class="col-4-md"><p>.col-4-md</p></div>
-                    <div class="col-4-md"><p>.col-4-md</p></div>
-                    <div class="col-4-md"><p>.col-4-md</p></div>
-                </div>
-                <div class="row">
-                    <div class="col-3-lg"><p>.col-3-lg</p></div>
-                    <div class="col-3-lg"><p>.col-3-lg</p></div>
-                    <div class="col-3-lg"><p>.col-3-lg</p></div>
-                    <div class="col-3-lg"><p>.col-3-lg</p></div>
-                </div>
-            </div>
-        </section>
-        <section class="box">
-            <div class="row">
-                <div class="col-12">
+        </div>
+        <div class="row">
+            <div class="col-12-md">
+                <div class="box">
                     <h2>Dynamic Layouts</h2>
                     <p>
                         Core Grid allows dynamic changing of column sizes. Example below we have four containers.
@@ -141,36 +139,36 @@
                         The second class "-lg" defines our second change that will occur at the large breakpoint.
                         This will trigger the columns to span 3 columns wide.
                     </p>
+                    <div class="code core-grid" data-xrayhtml>
+                        <div class="row">
+                            <div class="col-6-sm col-3-lg"><p>.col-6-sm .col-3-lg</p></div>
+                            <div class="col-6-sm col-3-lg"><p>.col-6-sm .col-3-lg</p></div>
+                            <div class="col-6-sm col-3-lg"><p>.col-6-sm .col-3-lg</p></div>
+                            <div class="col-6-sm col-3-lg"><p>.col-6-sm .col-3-lg</p></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="code core-grid" data-xrayhtml>
-                <div class="row">
-                    <div class="col-6-sm col-3-lg"><p>.col-6-sm .col-3-lg</p></div>
-                    <div class="col-6-sm col-3-lg"><p>.col-6-sm .col-3-lg</p></div>
-                    <div class="col-6-sm col-3-lg"><p>.col-6-sm .col-3-lg</p></div>
-                    <div class="col-6-sm col-3-lg"><p>.col-6-sm .col-3-lg</p></div>
-                </div>
-            </div>
-        </section>
-        <section class="box">
-            <div class="row">
-                <div class="col-12">
+        </div>
+        <div class="row">
+            <div class="col-12-md">
+                <div class="box">
+
                     <h2>Secondary Control Grid</h2>
                     <p>
                         A secondary grid is for the fined tuned control over your breakpoints. All .col start at 100% mobile first.
                         To enable cols at certain width use media queries. Secondary grid follows the naming convention col-1-c
                         (-c for custom denotation).
                     </p>
-                </div>
-            </div>
-            <section class="page-class core-grid">
-                <div class="row">
-                    <div class="col-6-c"><p>.col-6-c</p></div>
-                    <div class="col-6-c"><p>.col-6-c</p></div>
-                </div>
-            </section>
-            <pre class="language-markup">
-            <code class="language-markup">
+
+                    <section class="page-class core-grid">
+                        <div class="row">
+                            <div class="col-6-c"><p>.col-6-c</p></div>
+                            <div class="col-6-c"><p>.col-6-c</p></div>
+                        </div>
+                    </section>
+                    <pre class="language-markup">
+                    <code class="language-markup">
 &lt;section class=&quot;page-class&quot;&gt; 
     &lt;div class=&quot;row&quot;&gt; 
         &lt;div class=&quot;col-6-c&quot;&gt;&lt;/div&gt; 
@@ -188,86 +186,93 @@
 &lt;/style&gt;
         </code>
     </pre>
-        </section>
-        <section class="box">
-            <div class="row">
-                <div class="col-12">
-                    <h2>Grid Layout</h2>
                 </div>
             </div>
-            <section class="core-grid">
-                <div class="row">
-                    <div class="col-1"><p>.col-1</p></div>
-                    <div class="col-1"><p>.col-1</p></div>
-                    <div class="col-1"><p>.col-1</p></div>
-                    <div class="col-1"><p>.col-1</p></div>
-                    <div class="col-1"><p>.col-1</p></div>
-                    <div class="col-1"><p>.col-1</p></div>
-                    <div class="col-1"><p>.col-1</p></div>
-                    <div class="col-1"><p>.col-1</p></div>
-                    <div class="col-1"><p>.col-1</p></div>
-                    <div class="col-1"><p>.col-1</p></div>
-                    <div class="col-1"><p>.col-1</p></div>
-                    <div class="col-1"><p>.col-1</p></div>
+        </div>
+
+        <div class="row">
+            <div class="col-12-md">
+                <div class="box">
+
+                    <h2>Grid Layout</h2>
+                    <section class="core-grid">
+                        <div class="row">
+                            <div class="col-1"><p>.col-1</p></div>
+                            <div class="col-1"><p>.col-1</p></div>
+                            <div class="col-1"><p>.col-1</p></div>
+                            <div class="col-1"><p>.col-1</p></div>
+                            <div class="col-1"><p>.col-1</p></div>
+                            <div class="col-1"><p>.col-1</p></div>
+                            <div class="col-1"><p>.col-1</p></div>
+                            <div class="col-1"><p>.col-1</p></div>
+                            <div class="col-1"><p>.col-1</p></div>
+                            <div class="col-1"><p>.col-1</p></div>
+                            <div class="col-1"><p>.col-1</p></div>
+                            <div class="col-1"><p>.col-1</p></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2"><p>.col-2</p></div>
+                            <div class="col-2"><p>.col-2</p></div>
+                            <div class="col-2"><p>.col-2</p></div>
+                            <div class="col-2"><p>.col-2</p></div>
+                            <div class="col-2"><p>.col-2</p></div>
+                            <div class="col-2"><p>.col-2</p></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3"><p>.col-3</p></div>
+                            <div class="col-3"><p>.col-3</p></div>
+                            <div class="col-3"><p>.col-3</p></div>
+                            <div class="col-3"><p>.col-3</p></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4"><p>.col-4</p></div>
+                            <div class="col-4"><p>.col-4</p></div>
+                            <div class="col-4"><p>.col-4</p></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6"><p>.col-6</p></div>
+                            <div class="col-6"><p>.col-6</p></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12"><p>.col-12</p></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-5"><p>.col-5</p></div>
+                            <div class="col-7"><p>.col-7</p></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-8"><p>.col-8</p></div>
+                            <div class="col-4"><p>.col-4</p></div>
+                        </div>
+                    </section>
                 </div>
-                <div class="row">
-                    <div class="col-2"><p>.col-2</p></div>
-                    <div class="col-2"><p>.col-2</p></div>
-                    <div class="col-2"><p>.col-2</p></div>
-                    <div class="col-2"><p>.col-2</p></div>
-                    <div class="col-2"><p>.col-2</p></div>
-                    <div class="col-2"><p>.col-2</p></div>
-                </div>
-                <div class="row">
-                    <div class="col-3"><p>.col-3</p></div>
-                    <div class="col-3"><p>.col-3</p></div>
-                    <div class="col-3"><p>.col-3</p></div>
-                    <div class="col-3"><p>.col-3</p></div>
-                </div>
-                <div class="row">
-                    <div class="col-4"><p>.col-4</p></div>
-                    <div class="col-4"><p>.col-4</p></div>
-                    <div class="col-4"><p>.col-4</p></div>
-                </div>
-                <div class="row">
-                    <div class="col-6"><p>.col-6</p></div>
-                    <div class="col-6"><p>.col-6</p></div>
-                </div>
-                <div class="row">
-                    <div class="col-12"><p>.col-12</p></div>
-                </div>
-                <div class="row">
-                    <div class="col-5"><p>.col-5</p></div>
-                    <div class="col-7"><p>.col-7</p></div>
-                </div>
-                <div class="row">
-                    <div class="col-8"><p>.col-8</p></div>
-                    <div class="col-4"><p>.col-4</p></div>
-                </div>
-            </section>
-        </section>
-        <section class="box">
-            <div class="row">
-                <div class="col-12">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12-md">
+                <div class="box">
                     <h2>Containing Classes (max-width)</h2>
                     <p>
                         Using containing classes you can contain elements width proportionally to the max width of the ".container" class. This allows columns to be created that
                         are flexible but do not scale with the view port. Example if we add a ".col-6-contain" the element max width will be half of the ".container" class width. (1100/2 = 550px).
                         This can be usefull for setting a max width on objects such as forms.
                     </p>
+
+                    <section class="core-grid row">
+                        <div class="col-8-contain"><p>.col-8-contain (max-width: 733.33333px)</p></div>
+                        <div class="clear-both"></div>
+                        <div class="col-6-contain"><p>.col-6-contain (max-width: 550px)</p></div>
+                        <div class="clear-both"></div>
+                        <div class="col-4-contain"><p>.col-4-contain (max-width: 366.66667px)</p></div>
+                    </section>
                 </div>
             </div>
-            <section class="core-grid row">
-                <div class="col-8-contain"><p>.col-8-contain (max-width: 733.33333px)</p></div>
-                <div class="clear-both"></div>
-                <div class="col-6-contain"><p>.col-6-contain (max-width: 550px)</p></div>
-                <div class="clear-both"></div>
-                <div class="col-4-contain"><p>.col-4-contain (max-width: 366.66667px)</p></div>
-            </section>
-        </section>
-        <section class="box">
-            <div class="row">
-                <div class="col-12">
+        </div>
+
+        <div class="row">
+            <div class="col-12-md">
+                <div class="box">
                     <h2>Utilities</h2>
                     <p>
                         By leveraging Sass we can have a true mobile first responsive grid and still support older IE versions.
@@ -277,7 +282,7 @@
                     </p>
 
                     <p>Core Grid contains multiple helper classes to show and hide content to the corresponding grid breakpoints.</p>
-                    <table class="table-default visible-table">
+                    <table class="table visible-table">
                         <thead>
                             <tr>
                                 <th></th>
@@ -381,7 +386,7 @@
                     </table>
                 </div>
             </div>
-        </section>
+        </div>
     </main>
     <footer>
         <a href="http://www.corycode.me" target="_blank">Cory Bateman www.corycode.me</a><br /><br />
