@@ -1,7 +1,7 @@
 /*! 
     https://github.com/splintercode/CoreGrid
     MIT License http://opensource.org/licenses/MIT
-    Core Grid 1.5.1
+    Core Grid 1.5.2
 */
 *, *:before, *:after {
   /* Chrome 9-, Safari 5-, iOS 4.2-, Android 3-, Blackberry 7- */
@@ -45,7 +45,7 @@
   width: 100%;
   max-width: 1100px;
   margin: 0 auto;
-  padding: 0 2%; }
+  padding: 0 12px; }
 
 .row {
   clear: both;

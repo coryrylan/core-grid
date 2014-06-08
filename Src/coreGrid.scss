@@ -3,7 +3,7 @@
 /*! 
     https://github.com/splintercode/CoreGrid
     MIT License http://opensource.org/licenses/MIT
-    Core Grid 1.5.1
+    Core Grid 1.5.2
 */
 
 $container-width: 1100px;
@@ -62,7 +62,7 @@ $cols: 12;
     width: 100%;
     max-width: $container-width;
     margin: 0 auto;
-    padding: 0 2%;
+    padding: 0 12px;
 }
 
 .row {
