@@ -1,4 +1,4 @@
-/*! 
+﻿/*! 
     https://github.com/splintercode/CoreGrid
     MIT License http://opensource.org/licenses/MIT
     Core Grid 1.5.2
@@ -56,51 +56,63 @@
 /* #region --- Contain Box wrappers --- */
 .col-1-contain {
   width: 100%;
-  max-width: 91.66667px; }
+  max-width: 91.66667px;
+  padding: 0; }
 
 .col-2-contain {
   width: 100%;
-  max-width: 183.33333px; }
+  max-width: 183.33333px;
+  padding: 0; }
 
 .col-3-contain {
   width: 100%;
-  max-width: 275px; }
+  max-width: 275px;
+  padding: 0; }
 
 .col-4-contain {
   width: 100%;
-  max-width: 366.66667px; }
+  max-width: 366.66667px;
+  padding: 0; }
 
 .col-5-contain {
   width: 100%;
-  max-width: 458.33333px; }
+  max-width: 458.33333px;
+  padding: 0; }
 
 .col-6-contain {
   width: 100%;
-  max-width: 550px; }
+  max-width: 550px;
+  padding: 0; }
 
 .col-7-contain {
   width: 100%;
-  max-width: 641.66667px; }
+  max-width: 641.66667px;
+  padding: 0; }
 
 .col-8-contain {
   width: 100%;
-  max-width: 733.33333px; }
+  max-width: 733.33333px;
+  padding: 0; }
 
 .col-9-contain {
   width: 100%;
-  max-width: 825px; }
+  max-width: 825px;
+  padding: 0; }
 
 .col-10-contain {
   width: 100%;
-  max-width: 916.66667px; }
+  max-width: 916.66667px;
+  padding: 0; }
 
 .col-11-contain {
   width: 100%;
-  max-width: 1008.33333px; }
+  max-width: 1008.33333px;
+  padding: 0; }
 
 .col-12-contain {
   width: 100%;
-  max-width: 1100px; }
+  max-width: 1100px;
+  padding: 0; }
 
 /* #endregion */
 /* #region --- Extra Small Auto Grid --- */
@@ -190,7 +202,6 @@
 .hidden-sm {
   display: none; }
 
-
 /* #endregion */
 /* #region --- Primary Medium Auto Grid 720px and greater --- */
 .col-1-md, .col-1 {
@@ -234,7 +245,6 @@
 
 .hidden-md {
   display: none; }
-
 
 /* #endregion */
 /* #region --- Large Auto Grid 960px and greater --- */
@@ -280,7 +290,6 @@
 .hidden-lg {
   display: none; }
 
-
 /* #endregion */
 /* #region --- Secondary Semantic Control Grid --- */
 /*
@@ -297,17 +306,42 @@
 .col-11-c { width: 91.663%; } 
 .col-12-c { width: 100%; } 
 */
-
-
-
-
-
-
-
-
-
-
-
-
 /* #endregion */
-/*# sourceMappingURL=Oldie.css.map */
+/* --- Display --- */
+.display-none {
+  display: none; }
+
+.display-none-important {
+  display: none !important; }
+
+.display-block {
+  display: block; }
+
+.display-inline-block {
+  display: inline-block; }
+
+.visible-hidden {
+  visibility: hidden; }
+
+.block-center {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  float: none; }
+
+.clear-both {
+  clear: both; }
+
+/* Margin Helpers */
+.margin-top {
+  margin-top: 24px; }
+
+.margin-bottom {
+  margin-bottom: 24px; }
+
+.margin-top-small {
+  margin-top: 12px; }
+
+.margin-bottom-small {
+  margin-bottom: 12px; }
+
