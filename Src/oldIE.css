@@ -345,3 +345,11 @@
 .margin-bottom-small {
   margin-bottom: 12px; }
 
+html {
+  font-size: 16px;
+  line-height: 1.5rem; }
+
+h1, h2, h3, h4, h5, h6, hgroup, ul, ol, dl, blockquote, p, address, table, fieldset, figure, pre, .header, img {
+  margin: 0;
+  margin-bottom: 1.5rem; }
+
