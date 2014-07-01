@@ -566,6 +566,12 @@ header {
     margin: 0;
     border-bottom: 0; }
 
+code {
+  background: #ddd; }
+
+.language-css, .language-markup {
+  background: none; }
+
 h2, h3, a {
   margin: 1% 0;
   color: #51AD38; }
@@ -694,4 +700,4 @@ thead, thead th {
   .link-handle {
     margin-bottom: 50px; } }
 
-/*# sourceMappingURL=index.css.map */
+

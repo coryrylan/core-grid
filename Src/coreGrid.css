@@ -1,7 +1,7 @@
 ﻿/*! 
     https://github.com/splintercode/CoreGrid
     MIT License http://opensource.org/licenses/MIT
-    Core Grid 1.5.2
+    Core Grid 1.6.0
 */
 *, *:before, *:after {
   /* Chrome 9-, Safari 5-, iOS 4.2-, Android 3-, Blackberry 7- */
@@ -24,15 +24,6 @@
 
 .omega {
   padding-right: 0; }
-
-.float-left {
-  float: left; }
-
-.float-right {
-  float: right; }
-
-.clear-both {
-  clear: both; }
 
 .clearfix:after {
   content: ".";
@@ -271,7 +262,7 @@
 .col-12-c { width: 100%; } 
 */
 /* #endregion */
-/* --- Display --- */
+/* --- Layout helpers --- */
 .display-none {
   display: none; }
 
@@ -293,8 +284,23 @@
   display: block;
   float: none; }
 
+.float-left {
+  float: left; }
+
+.float-right {
+  float: right; }
+
 .clear-both {
   clear: both; }
+
+/* Line Hight Set http://csswizardry.com/2012/06/single-direction-margin-declarations/ */
+html {
+  font-size: 16px;
+  line-height: 1.5rem; }
+
+h1, h2, h3, h4, h5, h6, hgroup, ul, ol, dl, blockquote, p, address, table, fieldset, figure, pre, .header, img {
+  margin: 0;
+  margin-bottom: 1.5rem; }
 
 /* Margin Helpers */
 .margin-top {
@@ -308,12 +314,4 @@
 
 .margin-bottom-small {
   margin-bottom: 12px; }
-
-html {
-  font-size: 16px;
-  line-height: 1.5rem; }
-
-h1, h2, h3, h4, h5, h6, hgroup, ul, ol, dl, blockquote, p, address, table, fieldset, figure, pre, .header, img {
-  margin: 0;
-  margin-bottom: 1.5rem; }
 

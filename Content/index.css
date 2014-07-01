@@ -1,4 +1,4 @@
-*, *:before, *:after {
+﻿*, *:before, *:after {
   /* Chrome 9-, Safari 5-, iOS 4.2-, Android 3-, Blackberry 7- */
   -webkit-box-sizing: border-box;
   /* Firefox (desktop or Android) 28- */
@@ -28,6 +28,12 @@ header {
     padding: 8px 0;
     margin: 0;
     border-bottom: 0; }
+
+code {
+  background: #ddd; }
+
+.language-css, .language-markup {
+  background: none; }
 
 h2, h3, a {
   margin: 1% 0;
@@ -157,4 +163,3 @@ thead, thead th {
   .link-handle {
     margin-bottom: 50px; } }
 
-/*# sourceMappingURL=index.css.map */

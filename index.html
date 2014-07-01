@@ -21,7 +21,7 @@
         <div class="row">
             <div class="col-12-md">
                 <div class="box">
-                    <h2>Core Grid System (v1.5.2)</h2>
+                    <h2>Core Grid System (v1.6.0)</h2>
                     <p>
                         Core Grid is a dynamic mobile first Sass/CSS grid. The grid is designed to have default break points for the majority
                         of content layouts and a secondary semantic grid for fined tuned control over layouts.
@@ -384,6 +384,77 @@
                             </tr>
                         </tbody>
                     </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12-md">
+                <div class="box">
+                    <h2>Layout Helpers</h2>
+                    <p>
+                        Layout helpers are for elements or small modules that only need a small layout change such as <code>display: inline</code>
+                        to <code>display: block;</code>. Layout helper classes should not be used on modules or elements that have Sass modules or classes already applied.
+                    </p>
+<pre class="language-css">
+<code class="language-css">
+/* --- Layout helpers --- */
+.display-none {
+    display: none;
+}
+.display-none-important {
+    display: none !important;
+}
+.display-block {
+    display: block;
+}
+.display-inline-block {
+    display: inline-block;
+}
+.visible-hidden {
+    visibility: hidden;
+}
+.block-center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    float: none;
+}
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+.clear-both {
+    clear: both;
+}
+/* Line Hight Set http://csswizardry.com/2012/06/single-direction-margin-declarations/ */
+html {
+    font-size: 16px;
+    line-height: 1.5rem;
+}
+h1, h2, h3, h4, h5, h6, hgroup,
+ul, ol, dl, blockquote, p, address,
+table, fieldset, figure, pre, .header, img {
+    margin: 0;
+    margin-bottom: 1.5rem;
+}
+/* Margin Helpers */
+.margin-top {
+    margin-top: 24px;
+}
+.margin-bottom {
+    margin-bottom: 24px;
+}
+.margin-top-small {
+    margin-top: 12px;
+}
+.margin-bottom-small {
+    margin-bottom: 12px;
+}
+</code>
+</pre>
                 </div>
             </div>
         </div>
