@@ -1,7 +1,7 @@
 ﻿/*! 
     https://github.com/splintercode/CoreGrid
     MIT License http://opensource.org/licenses/MIT
-    Core Grid 1.6.0
+    Core Grid 1.7.0
 */
 *, *:before, *:after {
   /* Chrome 9-, Safari 5-, iOS 4.2-, Android 3-, Blackberry 7- */
@@ -46,62 +46,50 @@
 
 /* #region --- Contain Box wrappers --- */
 .col-1-contain {
-  width: 100%;
   max-width: 91.66667px;
   padding: 0; }
 
 .col-2-contain {
-  width: 100%;
   max-width: 183.33333px;
   padding: 0; }
 
 .col-3-contain {
-  width: 100%;
   max-width: 275px;
   padding: 0; }
 
 .col-4-contain {
-  width: 100%;
   max-width: 366.66667px;
   padding: 0; }
 
 .col-5-contain {
-  width: 100%;
   max-width: 458.33333px;
   padding: 0; }
 
 .col-6-contain {
-  width: 100%;
   max-width: 550px;
   padding: 0; }
 
 .col-7-contain {
-  width: 100%;
   max-width: 641.66667px;
   padding: 0; }
 
 .col-8-contain {
-  width: 100%;
   max-width: 733.33333px;
   padding: 0; }
 
 .col-9-contain {
-  width: 100%;
   max-width: 825px;
   padding: 0; }
 
 .col-10-contain {
-  width: 100%;
   max-width: 916.66667px;
   padding: 0; }
 
 .col-11-contain {
-  width: 100%;
   max-width: 1008.33333px;
   padding: 0; }
 
 .col-12-contain {
-  width: 100%;
   max-width: 1100px;
   padding: 0; }
 
@@ -350,4 +338,3 @@ h1, h2, h3, h4, h5, h6, hgroup, ul, ol, dl, blockquote, p, address, table, field
 
 .margin-bottom-small {
   margin-bottom: 12px; }
-
