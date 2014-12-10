@@ -3,7 +3,7 @@
 /*! 
     https://github.com/splintercode/CoreGrid
     MIT License http://opensource.org/licenses/MIT
-    Core Grid 1.7.0
+    Core Grid 1.7.1
 */
 
 $container-width: 1100px;
@@ -54,10 +54,10 @@ $cols: 12;
 }
 
 .row {
-    clear:both;
-    overflow:hidden;
+    clear: both;
+    overflow: hidden;
     margin-left: -8px;
-    margin-right:-8px;
+    margin-right: -8px;
 }
 
 /* #region --- Contain Box wrappers --- */
@@ -222,6 +222,10 @@ $col-width: ($container-width / 12);
 
 .clear-both {
     clear: both;
+}
+
+.full-width {
+    width: 100%;
 }
 
 /* Line Hight Set http://csswizardry.com/2012/06/single-direction-margin-declarations/ */

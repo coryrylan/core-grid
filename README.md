@@ -1,4 +1,4 @@
-<h1>Core Grid 1.7.0</h1>
+<h1>Core Grid 1.7.1</h1>
 <p>
   <a href="http://splintercode.github.io/core-grid/">View Core Grid Documentation</a>
   Core Grid is a simple mobile first Sass/CSS grid.

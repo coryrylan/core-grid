@@ -1,7 +1,7 @@
 ﻿/*! 
     https://github.com/splintercode/CoreGrid
     MIT License http://opensource.org/licenses/MIT
-    Core Grid 1.7.0
+    Core Grid 1.7.1
 */
 *, *:before, *:after {
   /* Chrome 9-, Safari 5-, iOS 4.2-, Android 3-, Blackberry 7- */
@@ -316,6 +316,9 @@
 
 .clear-both {
   clear: both; }
+
+.full-width {
+  width: 100%; }
 
 /* Line Hight Set http://csswizardry.com/2012/06/single-direction-margin-declarations/ */
 html {
