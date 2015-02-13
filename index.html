@@ -21,7 +21,7 @@
         <div class="row">
             <div class="col-12-md">
                 <div class="box">
-                    <h2>Core Grid System (v1.7.1)</h2>
+                    <h2>Core Grid System (v1.8.0)</h2>
                     <p>
                         Core Grid is a dynamic mobile first Sass/CSS grid. The grid is designed to have default break points for the majority
                         of content layouts and a secondary semantic grid for fined tuned control over layouts.
@@ -150,46 +150,6 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12-md">
-                <div class="box">
-
-                    <h2>Secondary Control Grid</h2>
-                    <p>
-                        A secondary grid is for the fined tuned control over your breakpoints. All .col start at 100% mobile first.
-                        To enable cols at certain width use media queries. Secondary grid follows the naming convention col-1-c
-                        (-c for custom denotation).
-                    </p>
-
-                    <section class="page-class core-grid">
-                        <div class="row">
-                            <div class="col-6-c"><p>.col-6-c</p></div>
-                            <div class="col-6-c"><p>.col-6-c</p></div>
-                        </div>
-                    </section>
-                    <pre class="language-markup">
-                    <code class="language-markup">
-&lt;section class=&quot;page-class&quot;&gt; 
-    &lt;div class=&quot;row&quot;&gt; 
-        &lt;div class=&quot;col-6-c&quot;&gt;&lt;/div&gt; 
-        &lt;div class=&quot;col-6-c&quot;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/section&gt;
-&lt;style&gt;
-@media all and (min-width: 33em)
-    .page-class {
-        .col-6-c {
-            width:50%;
-        }
-    }
-}
-&lt;/style&gt;
-        </code>
-    </pre>
-                </div>
-            </div>
-        </div>
-
         <div class="row">
             <div class="col-12-md">
                 <div class="box">
@@ -432,6 +392,7 @@
 .clear-both {
     clear: both;
 }
+     
 /* Line Hight Set http://csswizardry.com/2012/06/single-direction-margin-declarations/ */
 html {
     font-size: 16px;
@@ -443,7 +404,8 @@ table, fieldset, figure, pre, .header, img {
     margin: 0;
     margin-bottom: 1.5rem;
 }
-/* Margin Helpers */
+     
+/* Margin and Padding Helpers */
 .margin-top {
     margin-top: 24px;
 }
@@ -455,6 +417,9 @@ table, fieldset, figure, pre, .header, img {
 }
 .margin-bottom-small {
     margin-bottom: 12px;
+}
+.padding-bottom-none {
+    padding-bottom: 0;
 }
 </code>
 </pre>

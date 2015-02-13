@@ -3,7 +3,7 @@
 /*! 
     https://github.com/splintercode/CoreGrid
     MIT License http://opensource.org/licenses/MIT
-    Core Grid 1.7.1
+    Core Grid 1.8.0
 */
 
 $container-width: 1100px;
@@ -12,13 +12,23 @@ $md-break: 45em;
 $lg-break: 60em;
 $cols: 12;
 
-*, *:before, *:after {
+// http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+html {
     /* Chrome 9-, Safari 5-, iOS 4.2-, Android 3-, Blackberry 7- */
     -webkit-box-sizing: border-box;
     /* Firefox (desktop or Android) 28- */
     -moz-box-sizing: border-box;
     /* Firefox 29+, IE 8+, Chrome 10+, Safari 5.1+, Opera 9.5+, iOS 5+, Opera Mini Anything, Blackberry 10+, Android 4+ */
     box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    /* Chrome 9-, Safari 5-, iOS 4.2-, Android 3-, Blackberry 7- */
+    -webkit-box-sizing: inherit;
+    /* Firefox (desktop or Android) 28- */
+    -moz-box-sizing: inherit;
+    /* Firefox 29+, IE 8+, Chrome 10+, Safari 5.1+, Opera 9.5+, iOS 5+, Opera Mini Anything, Blackberry 10+, Android 4+ */
+    box-sizing: inherit;
 }
 
 /* --- Column Set Up --- */
@@ -161,28 +171,18 @@ $col-width: ($container-width / 12);
 }
 /* #endregion */
 
-/* #region --- Secondary Semantic Control Grid --- */
-/*
-.col-1-c { width: 8.333%; } 
-.col-2-c { width: 16.666%; } 
-.col-3-c { width: 25%; } 
-.col-4-c { width: 33.333%; } 
-.col-5-c { width: 41.665%; } 
-.col-6-c { width: 50%; } 
-.col-7-c { width: 58.331%; }
-.col-8-c { width: 66.664%; } 
-.col-9-c { width: 75%; } 
-.col-10-c { width: 83.33%; } 
-.col-11-c { width: 91.663%; } 
-.col-12-c { width: 100%; } 
-*/
-
-@for $i from 1 through $cols {
-    .col-#{$i}-#{'c'} {
-        @extend .extend-col;
-    }
+/* Line Hight Set http://csswizardry.com/2012/06/single-direction-margin-declarations/ */
+html {
+    font-size: 16px;
+    line-height: 1.5rem;
 }
-/* #endregion */
+
+h1, h2, h3, h4, h5, h6, hgroup,
+ul, ol, dl, blockquote, p, address,
+table, fieldset, figure, pre, .header, img {
+    margin: 0;
+    margin-bottom: 1.5rem;
+}
 
 /* --- Layout helpers --- */
 .display-none {
@@ -228,20 +228,7 @@ $col-width: ($container-width / 12);
     width: 100%;
 }
 
-/* Line Hight Set http://csswizardry.com/2012/06/single-direction-margin-declarations/ */
-html {
-    font-size: 16px;
-    line-height: 1.5rem;
-}
-
-h1, h2, h3, h4, h5, h6, hgroup,
-ul, ol, dl, blockquote, p, address,
-table, fieldset, figure, pre, .header, img {
-    margin: 0;
-    margin-bottom: 1.5rem;
-}
-
-/* Margin Helpers */
+/* Margin and Padding Helpers */
 .margin-top {
     margin-top: 24px;
 }
@@ -256,4 +243,8 @@ table, fieldset, figure, pre, .header, img {
 
 .margin-bottom-small {
     margin-bottom: 12px;
+}
+
+.padding-bottom-none {
+    padding-bottom: 0;
 }

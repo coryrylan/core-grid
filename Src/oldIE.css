@@ -1,9 +1,9 @@
 ﻿/*! 
     https://github.com/splintercode/CoreGrid
     MIT License http://opensource.org/licenses/MIT
-    Core Grid 1.7.1
+    Core Grid 1.8.0
 */
-*, *:before, *:after {
+html {
   /* Chrome 9-, Safari 5-, iOS 4.2-, Android 3-, Blackberry 7- */
   -webkit-box-sizing: border-box;
   /* Firefox (desktop or Android) 28- */
@@ -11,8 +11,16 @@
   /* Firefox 29+, IE 8+, Chrome 10+, Safari 5.1+, Opera 9.5+, iOS 5+, Opera Mini Anything, Blackberry 10+, Android 4+ */
   box-sizing: border-box; }
 
+*, *:before, *:after {
+  /* Chrome 9-, Safari 5-, iOS 4.2-, Android 3-, Blackberry 7- */
+  -webkit-box-sizing: inherit;
+  /* Firefox (desktop or Android) 28- */
+  -moz-box-sizing: inherit;
+  /* Firefox 29+, IE 8+, Chrome 10+, Safari 5.1+, Opera 9.5+, iOS 5+, Opera Mini Anything, Blackberry 10+, Android 4+ */
+  box-sizing: inherit; }
+
 /* --- Column Set Up --- */
-.extend-col, .col-1-contain, .col-2-contain, .col-3-contain, .col-4-contain, .col-5-contain, .col-6-contain, .col-7-contain, .col-8-contain, .col-9-contain, .col-10-contain, .col-11-contain, .col-12-contain, .col-1-xs, .col-2-xs, .col-3-xs, .col-4-xs, .col-5-xs, .col-6-xs, .col-7-xs, .col-8-xs, .col-9-xs, .col-10-xs, .col-11-xs, .col-12-xs, .col-1-sm, .col-2-sm, .col-3-sm, .col-4-sm, .col-5-sm, .col-6-sm, .col-7-sm, .col-8-sm, .col-9-sm, .col-10-sm, .col-11-sm, .col-12-sm, .col-1-md, .col-1, .col-2-md, .col-2, .col-3-md, .col-3, .col-4-md, .col-4, .col-5-md, .col-5, .col-6-md, .col-6, .col-7-md, .col-7, .col-8-md, .col-8, .col-9-md, .col-9, .col-10-md, .col-10, .col-11-md, .col-11, .col-12-md, .col-12, .col-1-lg, .col-2-lg, .col-3-lg, .col-4-lg, .col-5-lg, .col-6-lg, .col-7-lg, .col-8-lg, .col-9-lg, .col-10-lg, .col-11-lg, .col-12-lg, .col-1-c, .col-2-c, .col-3-c, .col-4-c, .col-5-c, .col-6-c, .col-7-c, .col-8-c, .col-9-c, .col-10-c, .col-11-c, .col-12-c {
+.extend-col, .col-1-contain, .col-2-contain, .col-3-contain, .col-4-contain, .col-5-contain, .col-6-contain, .col-7-contain, .col-8-contain, .col-9-contain, .col-10-contain, .col-11-contain, .col-12-contain, .col-1-xs, .col-2-xs, .col-3-xs, .col-4-xs, .col-5-xs, .col-6-xs, .col-7-xs, .col-8-xs, .col-9-xs, .col-10-xs, .col-11-xs, .col-12-xs, .col-1-sm, .col-2-sm, .col-3-sm, .col-4-sm, .col-5-sm, .col-6-sm, .col-7-sm, .col-8-sm, .col-9-sm, .col-10-sm, .col-11-sm, .col-12-sm, .col-1-md, .col-1, .col-2-md, .col-2, .col-3-md, .col-3, .col-4-md, .col-4, .col-5-md, .col-5, .col-6-md, .col-6, .col-7-md, .col-7, .col-8-md, .col-8, .col-9-md, .col-9, .col-10-md, .col-10, .col-11-md, .col-11, .col-12-md, .col-12, .col-1-lg, .col-2-lg, .col-3-lg, .col-4-lg, .col-5-lg, .col-6-lg, .col-7-lg, .col-8-lg, .col-9-lg, .col-10-lg, .col-11-lg, .col-12-lg {
   width: 100%;
   padding: 0 8px 16px 8px;
   float: left;
@@ -270,22 +278,15 @@
   display: none; }
 
 /* #endregion */
-/* #region --- Secondary Semantic Control Grid --- */
-/*
-.col-1-c { width: 8.333%; } 
-.col-2-c { width: 16.666%; } 
-.col-3-c { width: 25%; } 
-.col-4-c { width: 33.333%; } 
-.col-5-c { width: 41.665%; } 
-.col-6-c { width: 50%; } 
-.col-7-c { width: 58.331%; }
-.col-8-c { width: 66.664%; } 
-.col-9-c { width: 75%; } 
-.col-10-c { width: 83.33%; } 
-.col-11-c { width: 91.663%; } 
-.col-12-c { width: 100%; } 
-*/
-/* #endregion */
+/* Line Hight Set http://csswizardry.com/2012/06/single-direction-margin-declarations/ */
+html {
+  font-size: 16px;
+  line-height: 1.5rem; }
+
+h1, h2, h3, h4, h5, h6, hgroup, ul, ol, dl, blockquote, p, address, table, fieldset, figure, pre, .header, img {
+  margin: 0;
+  margin-bottom: 1.5rem; }
+
 /* --- Layout helpers --- */
 .display-none {
   display: none; }
@@ -320,16 +321,7 @@
 .full-width {
   width: 100%; }
 
-/* Line Hight Set http://csswizardry.com/2012/06/single-direction-margin-declarations/ */
-html {
-  font-size: 16px;
-  line-height: 1.5rem; }
-
-h1, h2, h3, h4, h5, h6, hgroup, ul, ol, dl, blockquote, p, address, table, fieldset, figure, pre, .header, img {
-  margin: 0;
-  margin-bottom: 1.5rem; }
-
-/* Margin Helpers */
+/* Margin and Padding Helpers */
 .margin-top {
   margin-top: 24px; }
 
@@ -341,3 +333,8 @@ h1, h2, h3, h4, h5, h6, hgroup, ul, ol, dl, blockquote, p, address, table, field
 
 .margin-bottom-small {
   margin-bottom: 12px; }
+
+.padding-bottom-none {
+  padding-bottom: 0; }
+
+/*# sourceMappingURL=Oldie.css.map */
