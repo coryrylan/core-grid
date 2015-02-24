@@ -20,8 +20,8 @@
     <main class="container index-page">
         <div class="row">
             <div class="col-12-md">
-                <div class="box">
-                    <h2>Core Grid System (v1.8.0)</h2>
+                <div class="card">
+                    <h2>Core Grid System (v1.9.0)</h2>
                     <p>
                         Core Grid is a dynamic mobile first Sass/CSS grid. The grid is designed to have default break points for the majority
                         of content layouts and a secondary semantic grid for fined tuned control over layouts.
@@ -32,7 +32,7 @@
         </div>
         <div class="row">
             <div class="col-12-md">
-                <div class="box">
+                <div class="card">
 
                     <h2>Primary Default Grid</h2>
                     <p>
@@ -131,7 +131,7 @@
         </div>
         <div class="row">
             <div class="col-12-md">
-                <div class="box">
+                <div class="card">
                     <h2>Dynamic Layouts</h2>
                     <p>
                         Core Grid allows dynamic changing of column sizes. Example below we have four containers.
@@ -152,8 +152,7 @@
         </div>
         <div class="row">
             <div class="col-12-md">
-                <div class="box">
-
+                <div class="card">
                     <h2>Grid Layout</h2>
                     <section class="core-grid">
                         <div class="row">
@@ -211,15 +210,15 @@
 
         <div class="row">
             <div class="col-12-md">
-                <div class="box">
+                <div class="card">
                     <h2>Containing Classes (max-width)</h2>
                     <p>
                         Using containing classes you can contain elements width proportionally to the max width of the ".container" class. This allows columns to be created that
                         are flexible but do not scale with the view port. Example if we add a ".col-6-contain" the element max width will be half of the ".container" class width. (1100/2 = 550px).
-                        This can be usefull for setting a max width on objects such as forms.
+                        This can be useful for setting a max width on objects such as forms.
                     </p>
 
-                    <section class="core-grid row">
+                    <section class="core-grid">
                         <div class="col-8-contain"><p>.col-8-contain (max-width: 733.33333px)</p></div>
                         <div class="clear-both"></div>
                         <div class="col-6-contain"><p>.col-6-contain (max-width: 550px)</p></div>
@@ -232,11 +231,11 @@
 
         <div class="row">
             <div class="col-12-md">
-                <div class="box">
+                <div class="card">
                     <h2>Utilities</h2>
                     <p>
                         By leveraging Sass we can have a true mobile first responsive grid and still support older IE versions.
-                        Using special Sass mixins we can create a seperate old IE style sheet for a fixed grid
+                        Using special Sass mixins we can create a separate old IE style sheet for a fixed grid
                         for our media queries to support ie8 and below. To read more on this please read Jake Archibalds great blog post
                         <a href="http://jakearchibald.github.io/sass-ie/" target="_blank">here</a>.
                     </p>
@@ -347,10 +346,84 @@
                 </div>
             </div>
         </div>
-
         <div class="row">
             <div class="col-12-md">
-                <div class="box">
+                <div class="card">
+                    <h2>Flexbox Helpers</h2>
+                    <p>
+                        Flexbox is the new standard for CSS layout. Flexbox is only used in core grid for minor layout enhancements
+                        as browser support for flexbox is still not widely supported (ie11+). The flexbox helper classes can help achieve same column heights and vertical alignment with the
+                        core grid. Flexbox helpers should not be used for critical layout features unless ie10+ is suitable with the project.
+                        <a href="http://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">Learn about flexbox</a>
+                    </p>
+<pre class="language-css">
+<code class="language-css">
+.flex {
+    display: -ms-flexbox; /* IE 10 */
+    display: -webkit-flex;
+    display: flex;
+}
+  
+.flex-row {
+    display: -ms-flexbox; /* IE 10 */
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+     
+.flex-vertical-align {
+    display: -ms-flexbox; /* IE 10 */
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-item-align: center; /* IE 10 */
+    -webkit-align-self: center;
+    align-self: center;
+}
+</code>
+</pre>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12-md">
+                <div class="card">
+                    <h2>Flexbox Examples</h2>
+                    <p>
+                        Here are some simple examples of what the flexbox helpers can accomplish.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div data-xrayhtml>
+            <div class="row flex-row">
+                <div class="col-3-md flex">
+                    <div class="card">
+                        <p>I am a flex item with more content than the rest. I am a flex item with more content than the rest. I am a flex item with more content than the rest. I am a flex item with more content than the rest. I am a flex item with more content than the rest. I am a flex item with more content than the rest.</p>
+                        <i class="icon-camera media-card__type-icon"></i>
+                    </div>
+                </div>
+                <div class="col-3-md flex-vertical-align">
+                    <div class="card">
+                        <p>I am a item with <code>.flex-vertical-align</code> this centers me vertically withing my parent flex container (<code>.flex-row</code>)</p>
+                    </div>
+                </div>
+                <div class="col-3-md flex">
+                    <div class="card">
+                        <p>I am a item with <code>.flex</code> this makes me a flex-item of my parent flex container (<code>.flex-row</code>)</p>
+                    </div>
+                </div>
+                <div class="col-3-md flex">
+                    <div class="card">
+                        <p>I am a item with <code>.flex</code> this makes me a flex-item of my parent flex container (<code>.flex-row</code>)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12-md">
+                <div class="card">
                     <h2>Layout Helpers</h2>
                     <p>
                         Layout helpers are for elements or small modules that only need a small layout change such as <code>display: inline</code>
@@ -398,26 +471,31 @@ html {
     font-size: 16px;
     line-height: 1.5rem;
 }
+     
 h1, h2, h3, h4, h5, h6, hgroup,
 ul, ol, dl, blockquote, p, address,
 table, fieldset, figure, pre, .header, img {
     margin: 0;
     margin-bottom: 1.5rem;
 }
-     
+      
 /* Margin and Padding Helpers */
 .margin-top {
     margin-top: 24px;
 }
+     
 .margin-bottom {
     margin-bottom: 24px;
 }
+     
 .margin-top-small {
     margin-top: 12px;
 }
+     
 .margin-bottom-small {
     margin-bottom: 12px;
 }
+     
 .padding-bottom-none {
     padding-bottom: 0;
 }

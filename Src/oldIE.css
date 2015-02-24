@@ -1,7 +1,7 @@
 ﻿/*! 
     https://github.com/splintercode/CoreGrid
     MIT License http://opensource.org/licenses/MIT
-    Core Grid 1.8.0
+    Core Grid 1.9.0
 */
 html {
   /* Chrome 9-, Safari 5-, iOS 4.2-, Android 3-, Blackberry 7- */
@@ -286,6 +286,32 @@ html {
 h1, h2, h3, h4, h5, h6, hgroup, ul, ol, dl, blockquote, p, address, table, fieldset, figure, pre, .header, img {
   margin: 0;
   margin-bottom: 1.5rem; }
+
+/* --- Flexbox helpers --- */
+.flex {
+  display: -ms-flexbox;
+  /* IE 10 */
+  display: -webkit-flex;
+  display: flex; }
+
+.flex-row {
+  display: -ms-flexbox;
+  /* IE 10 */
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap; }
+
+.flex-vertical-align {
+  display: -ms-flexbox;
+  /* IE 10 */
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-item-align: center;
+  /* IE 10 */
+  -webkit-align-self: center;
+  align-self: center; }
 
 /* --- Layout helpers --- */
 .display-none {

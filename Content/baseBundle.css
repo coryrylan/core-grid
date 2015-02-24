@@ -546,14 +546,14 @@ color: #66d9ef;
 body {
   font-size: 16px;
   font-family: 'Open Sans', Helvetica, Arial, "Lucida Grande", sans- serif;
-  background: #FAFAFA; }
+  background: #EEEFF0; }
 
 .clear-both {
   clear: both; }
 
 h1, h2, h3 {
   font-family: Helvetica, Arial, "Lucida Grande", sans- serif;
-  border-bottom: solid 1px #21C40B; }
+  margin-bottom: 24px; }
 
 header {
   width: 100%;
@@ -574,7 +574,6 @@ code {
   background: none; }
 
 h2, h3, a {
-  margin: 1% 0;
   color: #51AD38; }
 
 nav a {
@@ -604,7 +603,7 @@ main {
 footer {
   clear: both;
   width: 100%;
-  padding: 3% 0%;
+  padding: 3% 0;
   text-align: center;
   background: #2d2d2d; }
   footer a {
@@ -664,17 +663,19 @@ thead, thead th {
   table td:nth-child(even) {
     background: #E5E5E5; }
   table td:nth-child(odd) {
-    background: #FFF; } }
+    background: #FFF; }
+ }
 
 /* --- Simple Box --- */
-.box {
-  background: #eeeeee;
+.card {
+  background: #fff;
   color: #2d2d2d;
-  padding: 2%;
+  padding: 12px;
   width: 100%;
   margin: 0;
   overflow: hidden;
-  border: 1px solid #ccc; }
+  -webkit-box-shadow: 0 0 1px 0 rgba(42, 52, 64, 0.12);
+  box-shadow: 0 0 1px 0 rgba(42, 52, 64, 0.12); }
 
 /* Core Grid */
 .core-grid, .page-class {
@@ -688,17 +689,22 @@ thead, thead th {
 
 @media screen and (min-width: 33em) {
   .page-class .col-6-c {
-    width: 50%; } }
+    width: 50%; }
+ }
 
 @media screen and (min-width: 45em) {
   nav, header {
     position: fixed;
     top: 0; }
+
   nav {
     width: 200px; }
+
   main.container {
     margin-top: 70px; }
+
   .link-handle {
-    margin-bottom: 50px; } }
+    margin-bottom: 50px; }
+ }
 
-
+/*# sourceMappingURL=index.css.map */
