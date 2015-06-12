@@ -190,7 +190,7 @@ table, fieldset, figure, pre, .header, img {
     display: -webkit-flex;
     display: flex;
 }
-  
+
 .flex-row {
     display: -ms-flexbox; /* IE 10 */
     display: -webkit-flex;
@@ -199,14 +199,27 @@ table, fieldset, figure, pre, .header, img {
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
 }
-     
+
 .flex-vertical-align {
-    display: -ms-flexbox; /* IE 10 */
-    display: -webkit-flex;
-    display: flex;
     -ms-flex-item-align: center; /* IE 10 */
+    -moz-align-self: center;
     -webkit-align-self: center;
     align-self: center;
+}
+
+.flex-horizontal-align {
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.flex-full-height {
+    -webkit-box-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    -webkit-flex: 1 0 auto;
 }
 
 /* --- Layout helpers --- */

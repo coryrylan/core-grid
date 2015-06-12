@@ -310,14 +310,24 @@ h1, h2, h3, h4, h5, h6, hgroup, ul, ol, dl, blockquote, p, address, table, field
   flex-flow: row wrap; }
 
 .flex-vertical-align {
-  display: -ms-flexbox;
-  /* IE 10 */
-  display: -webkit-flex;
-  display: flex;
   -ms-flex-item-align: center;
   /* IE 10 */
+  -moz-align-self: center;
   -webkit-align-self: center;
   align-self: center; }
+
+.flex-horizontal-align {
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center; }
+
+.flex-full-height {
+  -webkit-box-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  -webkit-flex: 1 0 auto; }
 
 /* --- Layout helpers --- */
 .display-none {

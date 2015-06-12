@@ -21,10 +21,10 @@
         <div class="row">
             <div class="col-12-md">
                 <div class="card">
-                    <h2>Core Grid System (v1.9.0)</h2>
+                    <h2>Core Grid System v1.10.0</h2>
                     <p>
-                        Core Grid is a dynamic mobile first Sass/CSS grid. The grid is designed to have default break points for the majority
-                        of content layouts and a secondary semantic grid for fined tuned control over layouts.
+                        Core Grid is a dynamic mobile first Sass/CSS grid. Core grid uses traditional float based columns
+                        to provide the best browser support. In addition helper classes for flexbox are included that can progressively enhance UI layouts.
                     </p><br />
                     <a href="https://github.com/splintercode/CoreGrid" class="btn block-center">Download on GitHub</a>
                 </div>
@@ -33,8 +33,7 @@
         <div class="row">
             <div class="col-12-md">
                 <div class="card">
-
-                    <h2>Primary Default Grid</h2>
+                    <h2>Primary Grid</h2>
                     <p>
                         The first primary default is optimized for single
                         column mobile first layout. All columns start at a width of 100%. Use the specified class name to trigger columns at the corresponding container width.
@@ -358,29 +357,12 @@
                     </p>
 <pre class="language-css">
 <code class="language-css">
-.flex {
-    display: -ms-flexbox; /* IE 10 */
-    display: -webkit-flex;
-    display: flex;
-}
-  
-.flex-row {
-    display: -ms-flexbox; /* IE 10 */
-    display: -webkit-flex;
-    display: flex;
-    -ms-flex-flow: row wrap;
-    -webkit-flex-flow: row wrap;
-    flex-flow: row wrap;
-}
-     
-.flex-vertical-align {
-    display: -ms-flexbox; /* IE 10 */
-    display: -webkit-flex;
-    display: flex;
-    -ms-flex-item-align: center; /* IE 10 */
-    -webkit-align-self: center;
-    align-self: center;
-}
+/* --- Flexbox helpers included --- */
+.flex 
+.flex-row 
+.flex-vertical-align 
+.flex-horizontal-align 
+.flex-full-height 
 </code>
 </pre>
                 </div>
@@ -417,6 +399,20 @@
                 <div class="col-3-md flex">
                     <div class="card">
                         <p>I am a item with <code>.flex</code> this makes me a flex-item of my parent flex container (<code>.flex-row</code>)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12-md">
+                <div class="card">
+                    <h2>Flexbox horizontal and vertical centering</h2>
+                    <div data-xrayhtml>
+                        <div class="flex-row flex-horizontal-align" style="min-height: 330px; background-color: #ccc;">
+                            <div class="flex-vertical-align card" style="width: 200px; height: 200px;">
+                                Vertical and Horizontal centering with flexbox.
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
