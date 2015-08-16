@@ -1,0 +1,10 @@
+﻿[
+  {
+    "outputFile": "src/core-grid.css",
+    "inputFile": "src/core-grid.scss"
+  },
+  {
+    "outputFile": "src/old-ie.css",
+    "inputFile": "src/old-ie.scss"
+  }
+]

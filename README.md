@@ -1,9 +1,10 @@
-#Core Grid 1.10.0
+#Core Grid 1.10.1
 
 [View Core Grid Documentation](http://splintercode.github.io/core-grid/) 
 Core Grid is a mobile first Sass/CSS grid with support back to ie8. 
 
 ##Latest changes
+- Version 1.10.1 - Added fix for clearing bug in row class.
 - Version 1.10.0 - Added flexbox helpers for horizontal alignments
 - Version 1.9.0  - Added flexbox helpers for vertical alignments with safe fall backs for older versions of IE.
 - Version 1.8.0  - Improved box sizing resets. Deprecated control grid.
