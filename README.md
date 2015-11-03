@@ -1,6 +1,6 @@
 #Core Grid 1.10.1
 
-[View Core Grid Documentation](http://splintercode.github.io/core-grid/) 
+[View Core Grid Documentation](https://splintercode.github.io/core-grid/) 
 Core Grid is a mobile first Sass/CSS grid with support back to ie8. 
 
 ##Latest changes
